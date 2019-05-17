@@ -3,4 +3,5 @@
 li{list-style: none;}
 a:link, a:visited{color:black;}
 a{text-decoration: none;}
+img{display: block;}
 .clearfix:after{content:"";clear:both; display: block;}
