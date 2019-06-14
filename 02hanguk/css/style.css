@@ -155,4 +155,6 @@ div#content{height: 2000px;background:url(../images/bg_img01.jpg) no-repeat; bac
 #content .body>li:nth-child(8) .morebtn2{position: absolute; top:110px; left: 0px;  width: 180px;line-height: 40px;
   background-color: #fd503e;color:#fff;font-size: 0.9em; text-align: center;}
 
-#content .section03{width: 1200px; height: 60px; margin: 0 auto; background-color: #fff;}
+#content .section03{width: 1200px; height: 60px; margin: 0 auto; background-color: #fff; overflow: hidden;}
+#content .section03 .title{ width: 299px; line-height: 60px; float: left;}
+#content .section03 .body{float: right; width: 900px; line-height: 60px;}
