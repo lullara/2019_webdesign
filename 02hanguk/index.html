@@ -11,10 +11,20 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({
+			var prevnext = $(".slider").bxSlider({
 				touchEnabled:false,
 				auto:true,
-				mode:'fade'
+				controls:false,
+				
+			});
+			$('.btn_prev').click(function(){
+				prevnext.goToPrevSlide();
+				return false;
+			});
+
+			$('.btn_next').click(function(){
+				prevnext.goToNextSlide();
+				return false;
 			});
 		});
 	</script>
@@ -35,7 +45,16 @@
 				</div>
 				<div class="right_wrap">
 					<div class="right_menu">
+						<!-- <div class="font_size">
+								글자크기
+								<a href="#"><img src="images/icon_font01.jpg" alt="icon_font01"></a>
+								<a href="#"><img src="images/icon_font02.jpg" alt="icon_font02"></a>
+							</div> -->
 						<ul class="clearfix">
+							<li class="font_size">글자크기
+								<a href="#"><img src="images/icon_font01.jpg" alt="icon_font01" class="icon_font01"></a>
+								<a href="#"><img src="images/icon_font02.jpg" alt="icon_font02" class="icon_font02"></a>
+							</li>
 							<li><a href="#">찾아오시는 길</a></li>
 							<li><a href="#">ENGLISH</a></li>
 							<li><a href="#">사이트맵</a></li>
@@ -65,6 +84,7 @@
 
 	<!-- content -->
 	<div id="content">
+		<div class="bg_patten">
 		<div class="content_wrap clearfix">
 			<nav class="section01 clearfix">
 				<div class="left_text">
@@ -100,7 +120,8 @@
 			</nav>
 			<nav class="section02">
 				<ul class="body clearfix">
-					<li>
+					<li> 
+						<!-- 1 -->
 						<div class="slider">
 							<div>
 								<img src="images/bg_img02.jpg" alt="bg_img02">
@@ -131,8 +152,11 @@
 								<a href="#"><div class="moreBtn">자세히 보기</div></a>
 							</div>
 						</div>
+						<div class="btn_prev"><a href="#"><img src="images/btn_prev.png" alt="btn_prev"></a></div>
+						<div class="btn_next"><a href="#"><img src="images/btn_next.png" alt="btn_next"></a></div>
 					</li>
 					<li>
+						<!-- 2 -->
 						<div class="title">
 							<p><strong>APP</strong>으로<br>
 								<strong>스마트도서관</strong><br>
@@ -145,6 +169,7 @@
 						<div class="moreBtn1"><a href="#">자세히 보기</a></div>
 					</li>
 					<li>
+						<!-- 3 -->
 						<h3>HOT LINK</h3>
 						<div class="card_wrap">
 							<div>
@@ -163,6 +188,7 @@
 						
 					</li>
 					<li>
+						<!-- 4 -->
 						<h3>공지사항</h3>
 						<ul class="line">
 
@@ -186,6 +212,7 @@
 						
 					</li>
 					<li class="clearfix">
+						<!-- 5 -->
 						<h3>SNS NEWS</h3>
 						<img src="images/img02.jpg" alt="img02">
 						<div class="body">
@@ -202,11 +229,20 @@
 						</div>
 					</li>
 					<li>
-						<a href="#"><div class="tour">
-								<p>캠퍼스투어</p>
+						<!-- 6 -->
+						<a href="#">
+							<div class="tour">
+								<p>캠퍼스투어</p><br><br>
+								<div>
+									<p>한국대학교</p>
+									<p>둘러보기</p>
+								</div>
 							</div></a>
+							<div class="capus_hover"></div>
+
 					</li>
 					<li>	
+						<!-- 7 -->
 						<img src="images/img04.jpg" alt="" class="img04">
 						<div class="play_hover"></div>
 
@@ -214,7 +250,7 @@
 						
 					</li>
 					<li>
-						
+						<!-- 8 -->
 						<script>
 							$(document).ready(function(){
 								$(".slider02").bxSlider({
@@ -231,7 +267,7 @@
 						<div class="slider02">
 							<div>
 								<img src="images/img05.jpg" alt="img05">
-								<div class="slide_text">
+								<div class="slide2_text">
 									<p>2017년 신·편입생2차 모집1</p>
 									<h1>2017.7.1~7.10</h1>
 									<a href="#"><div class="morebtn2">입학사전예약</div></a>
@@ -239,7 +275,7 @@
 							</div>
 							<div>
 								<img src="images/img05.jpg" alt="img05">
-								<div class="slide_text">
+								<div class="slide2_text">
 									<p>2017년 신·편입생2차 모집2</p>
 									<h1>2017.7.1~7.10</h1>
 									<a href="#"><div class="morebtn2">입학사전예약</div></a>
@@ -247,7 +283,7 @@
 							</div>
 							<div>
 								<img src="images/img05.jpg" alt="img05">
-								<div class="slide_text">
+								<div class="slide2_text">
 									<p>2017년 신·편입생2차 모집3</p>
 									<h1>2017.7.1~7.10</h1>
 									<a href="#"><div class="morebtn2">입학사전예약</div></a>
@@ -255,7 +291,7 @@
 							</div>
 							<div>
 								<img src="images/img05.jpg" alt="img05">
-								<div class="slide_text">
+								<div class="slide2_text">
 									<p>2017년 신·편입생2차 모집4</p>
 									<h1>2017.7.1~7.10</h1>
 									<a href="#"><div class="morebtn2">입학사전예약</div></a>
@@ -270,30 +306,82 @@
 
 			<script>
 				$(document).ready(function(){
-					$(".slider03").bxSlider({
+					var updown = $(".slider03").bxSlider({
 						controls:false,
 						auto:true,
 						touchEnabled:false,
-						mode:'fade',
-						pager:false
+						pager:false,
+						mode:'vertical',
+						// pagerCustom:'.bx-pager',
+    
+						});
+
+						$(".btn_up").click(function(){
+							updown.goToPrevSlide();
+							return false;
+						});
+						$(".btn_down").click(function(){
+							updown.goToNextSlide();
+							return false;
 						});
 				});
 			</script>	
 			<nav class="section03 clearfix">
-			
-				<div class="title">
-					<h3>학사일정   2016 07</h3>
-				</div>	
-				
-				<div class="body">
+				<div class="slide_title">
+					<h3>학사일정</h3>
+				</div>			
+				<div class="body_wrap">
 					<div class="slider03">
-					<p>2016 - 1학기 성적 열람 및 상담 신청    성적열람 및 상담신청은 본인이수강한 교과목 설문조사를 모두 마친후 확인이...</p>
+						<div>
+							<div class="slide_date"><h3>201606</h3></div>
+							<div class="slide_text"><strong>2016-1학기 성적 열람 및 상담신청</strong> &nbsp;&nbsp;&nbsp;&nbsp;성적열람 및 상담신청은 본인이수강한 교과목 설문조사를 모두 마친후 확인이...</div>
+						</div>
+						<div>
+							<div class="slide_date"><h3>201607</h3></div>
+							<div class="slide_text"><strong>2016-2학기 성적 열람 및 상담신청</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성적열람 및 상담신청은 본인이수강한 교과목 설문조사를 모두 마친후 확인이...</div>
+						</div>
+						<div>
+							<div class="slide_date"><h3>201608</h3></div>
+							<div class="slide_text"><strong>2016-3학기 성적 열람 및 상담신청</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성적열람 및 상담신청은 본인이수강한 교과목 설문조사를 모두 마친후 확인이...</div>
+						</div>
 					</div>
+						<div class="btn_up"><a href="#"><img src="images/btn_up.png" alt="btn_up"></a></div>
+						<div class="btn_down"><a href="#"><img src="images/btn_down.png" alt="btn_down"></a></div>
+						
+					
 				</div>
-				
+		
+
+
 			</nav>
 		</div>
+		</div>
 	</div>
+	<footer id="main_footer">
+		
+			<div class="footer_logo">
+				<h3>한국대학교</h3>
+			</div>
+			<div class="footer_wrap">
+				<div class="footer_menu">
+					<ul class="clearfix">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">한국대학교</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li><a href="#">이용정책</a></li>
+						<li><a href="#">입점문의 및 광고</a></li>
+						<li><a href="#">이메일 무단 수집거부</a></li>
+					</ul>
+				</div>
+				
+				<address>
+					<p>대표자 : 홍길동  서울특별시 구로구 구로로300(구로동6가)      사업자등록번호 : 123-56-7890234</p>
+					<p>통신판매업 신고번호 : 제 1234-서울구로구-1004호 개인정보관리 책임자 : 홍길도 소비자피해보상보험</p>
+					<p>고객센터 : 1234-5678  FAX : 02-1234-5678 HANGUKUNIVERSITY @HANGUK.COM</p>
+				</address>
+				<p class="copyright">COPYRIGHTⓒ HANGUK. ALL RIGHTS RESEVED.</p>
+		</div>
+	</footer>
 
 </body>
 </html>
