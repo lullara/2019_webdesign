@@ -1,0 +1,7 @@
+@charset"utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+a:link, a:visited{color: black}
+li{list-style: none;}
+img{display: block;}
+.clearfix:after{content:"";clear:both; display: block;}
