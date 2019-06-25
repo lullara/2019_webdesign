@@ -19,7 +19,7 @@
 					<div class="search">
 						<label for="search">search</label>
 						<input type="text" id="search" placeholder="검색어를 입력하세요.">
-						<button type="button">검색</button>
+						<button type="button"><img src="images/icon001.png" alt="icon001"></button>
 
 					</div>
 					<div class="phone_num">
@@ -48,134 +48,148 @@
 			</div>
 		</div>
 	</header>
-	<div id="content">
-			
-		<section class="section01">
-				<input type="radio" id="first" class="inp" name="tap" checked="checked">
-				<input type="radio" id="second" class="inp" name="tap">
-				<input type="radio" id="third" class="inp" name="tap">
-				<input type="radio" id="foth" class="inp" name="tap">
-			<div class="select01">
-				<ul>
-					<li><a href="#"><label for="first">공항예약</label></a></li>
-					<li><a href="#"><label for="second">호텔예약</label></a></li>
-					<li><a href="#"><label for="third">렌트카</label></a></li>
-					<li><a href="#"><label for="foth">휴양지</label></a></li>
-				</ul>
-			</div>
-			<div class="tap_fisrt">	
-				<form action="update.php" class="f_layer">
+	<div id="content_wrap">
+		<div id="content">
+				
+			<section class="section01 clearfix">
+					<input type="radio" id="first" class="inp" name="tap" checked="checked">
+					<input type="radio" id="second" class="inp" name="tap">
+					<input type="radio" id="third" class="inp" name="tap">
+					<input type="radio" id="foth" class="inp" name="tap">
+				<div class="select01">
 					<ul>
 						<li>
-							<label for="nation">가고싶은 나라를 선택하세요</label>
-							<select name="nara" id="nation">
-								<option value="미국">미국</option>
-								<option value="베트남">베트남</option>
-								<option value="홍콩">홍콩</option>
-							</select>
+							<label for="first">
+								<img src="images/icon011.png" alt="icon011" >공항예약
+							</label>
 						</li>
-						<li>
-							<div class="left">
-								<label for="s_date">출발일</label>
-								<input type="date" id="s_data">
-							</div>
-							<div class="right">
-								<label for="d_date">도착일</label>
-								<input type="date" id="e_date">
-							</div>
-						</li>
-						<li>
-							<div class="left">
-								<label for="c_grade">좌석등급</label>
-								<select id="c_grade">
-									<option value="비즈니스">비즈니스</option>
-									<option value="이코노미">이코노미</option>
+						<li><label for="second"><img src="images/icon012.png" alt="icon012" >호텔예약</label></li>
+						<li><label for="third"><img src="images/icon013.png" alt="icon013" >렌트카</label></li>
+						<li><label for="foth"><img src="images/icon014.png" alt="icon014" >휴양지</label></li>
+					</ul>
+				</div>
+				<div class="tap_first clearfix">	
+					<form action="update.php" class="f_layer">
+						<ul>
+							<li>
+								<label for="nation">가고싶은 나라를 선택하세요</label>
+								<select name="nara" id="nation">
+									<option value="미국">미국</option>
+									<option value="베트남">베트남</option>
+									<option value="홍콩">홍콩</option>
 								</select>
-							</div>
-							<div class="right">
-								<label for="num">인원</label>
-								<input type="number" id="number" placeholder="1">
-							</div>
-						</li>
-					</ul>
-				</form>
-			</div>
-			<div class="tap_second">	
-				<form action="update.php" class="f_layer">
-					<ul>
-						<li>
-							<label for="hotel">가고싶은 호텔를 선택하세요</label>
-							<select  id="hotel">
-								<option value="힐튼">힐튼</option>
-								<option value="하얏트">하얏트</option>
-								<option value="스타우드">스타우드</option>
-							</select>
-						</li>
-						<li>
-							<div class="left">
-								<label for="s_date">체크인</label>
-								<input type="date" id="s_data">
-							</div>
-							<div class="right">
-								<label for="d_date">체크아웃</label>
-								<input type="date" id="e_date">
-							</div>
-						</li>
-						
-					</ul>
-				</form>
-			</div>
-			<div class="tap_third">	
-				<form action="update.php" class="f_layer">
-					<ul>
-						<li>
-							<label for="car">예약하고싶은 차를 선택하세요</label>
-							<select  id="car">
-								<option value="소형차">소형차</option>
-								<option value="중형차">중형차</option>
-								<option value="대형차">대형차</option>
-							</select>
-						</li>
-						<li>
-							<div class="left">
-								<label for="s_date">렌트일</label>
-								<input type="date" id="s_data">
-							</div>
-							<div class="right">
-								<label for="d_date">반납일</label>
-								<input type="date" id="e_date">
-							</div>
-						</li>
-						
-					</ul>
-				</form>
-			</div>
-			<div class="tap_forth">	
-				<form action="update.php" class="f_layer">
-					<ul>
-						<li>
-							<label for="city">예약하고싶은 휴양지 선택하세요</label>
-							<select  id="city">
-								<option value="뉴욕">뉴욕</option>
-								<option value="다낭">다낭</option>
-								<option value="마카오">마카오</option>
-							</select>
-						</li>
-						<li>
-							<div class="left">
-								<label for="s_date">출발일</label>
-								<input type="date" id="s_data">
-							</div>
-							<div class="right">
-								<label for="d_date">도착일</label>
-								<input type="date" id="e_date">
-							</div>
-						</li>
-						
-					</ul>
-				</form>
-			</div>
-		</section>
+							</li>
+							<li class="f_cell clearfix">
+								<div class="left">
+									<label for="s_date">출발일</label>
+									<input type="date" id="s_date">
+								</div>
+								<div class="right">
+									<label for="e_date">도착일</label>
+									<input type="date" id="e_date">
+								</div>
+							</li>
+							<li class="f_cell clearfix">
+								<div class="left">
+									<label for="c_grade">좌석등급</label>
+									<select id="c_grade">
+										<option value="비즈니스">비즈니스</option>
+										<option value="이코노미">이코노미</option>
+									</select>
+								</div>
+								<div class="right">
+									<label for="num">인원</label>
+									<input type="number" id="num" placeholder="1">
+								</div>
+							</li>
+						</ul>
+						<button type="button">
+							<img src="images/icon002.png" alt="icon002">검색하기</button>
+					</form>
+				</div>
+				<div class="tap_second clearfix">	
+					<form action="update.php" class="f_layer">
+						<ul>
+							<li>
+								<label for="hotel">가고싶은 호텔를 선택하세요</label>
+								<select  id="hotel">
+									<option value="힐튼">힐튼</option>
+									<option value="하얏트">하얏트</option>
+									<option value="스타우드">스타우드</option>
+								</select>
+							</li>
+							<li class="f_cell clearfix">
+								<div class="left">
+									<label for="s_date">체크인</label>
+									<input type="date" id="s_date">
+								</div>
+								<div class="right">
+									<label for="e_date">체크아웃</label>
+									<input type="date" id="e_date">
+								</div>
+							</li>
+							
+						</ul>
+						<button type="button">
+							<img src="images/icon002.png" alt="icon002">검색하기</button>
+					</form>
+				</div>
+				<div class="tap_third clearfix">	
+					<form action="update.php" class="f_layer">
+						<ul>
+							<li>
+								<label for="car">예약하고싶은 차를 선택하세요</label>
+								<select  id="car">
+									<option value="소형차">소형차</option>
+									<option value="중형차">중형차</option>
+									<option value="대형차">대형차</option>
+								</select>
+							</li>
+							<li class="f_cell clearfix">
+								<div class="left">
+									<label for="s_date">렌트일</label>
+									<input type="date" id="s_date">
+								</div>
+								<div class="right">
+									<label for="e_date">반납일</label>
+									<input type="date" id="e_date">
+								</div>
+							</li>
+							
+						</ul>
+						<button type="button">
+							<img src="images/icon002.png" alt="icon002">검색하기</button>
+					</form>
+				</div>
+				<div class="tap_forth clearfix">	
+					<form action="update.php" class="f_layer">
+						<ul>
+							<li>
+								<label for="city">예약하고싶은 휴양지 선택하세요</label>
+								<select  id="city">
+									<option value="뉴욕">뉴욕</option>
+									<option value="다낭">다낭</option>
+									<option value="마카오">마카오</option>
+								</select>
+							</li>
+							<li class="f_cell clearfix">
+								<div class="left">
+									<label for="s_date">출발일</label>
+									<input type="date" id="s_date">
+								</div>
+								<div class="right">
+									<label for="e_date">도착일</label>
+									<input type="date" id="e_date">
+								</div>
+							</li>
+							
+						</ul>
+						<button type="button">
+							<img src="images/icon002.png" alt="icon002">검색하기</button>
+					</form>
+				</div>
+			</section>
+		</div>
 	</div>
 
 
