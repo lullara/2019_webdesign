@@ -21,7 +21,13 @@
 				$(".content_wrap>div").eq(list).show();
 
 			});
-				
+				$("#main_header .lan li").click(function(){
+				var lang =$(this).index();
+				console.log(lang);
+				$("#main_header .lan li").removeClass();
+				$(this).addClass("on");	
+
+			});
 
 		});
 	</script>
@@ -30,16 +36,23 @@
 	<header id="main_header">
 		<div class="header_top clearfix">
 			<h1><a href="index.html">상자 안 고양이</a></h1>
-			<nav class="main_menu">
+			<nav class="lan">
+				<ul class="clearfix">
+					<li class="on">KOR</a></li>
+					<li>ENG</li>
+				</ul>
+			</nav>
+			<nav id="main_menu">
 				<ul class="clearfix">
 					<li><a href="sub01.html">상자 안 소개</a></li>
 					<li><a href="sub02.html">고양이 소개</a></li>
 					<li><a href="sub03.html">카페 메뉴</a></li>
 					<li><a href="sub04.html">고양이 일상</a></li>
 					<li><a href="sub05.html">집사 참여</a></li>
-					<li><a href="sub06.html">유기묘 지원</a></li>
+					<li><a href="sub05.html">집사 참여</a></li>
 				</ul>
 			</nav>
+			
 			<div class="txt">
 				<h2>상자 안 소개</h2>
 				<p>회사에서 이뤄낸 기술 변화가 세상을 바꿉니다.</p>
@@ -147,7 +160,7 @@
 					<div class="card_wrap">
 						<ul class="clearfix">
 							<li><img src="images/sb01_img001.jpg" alt=""></li>
-							<li class="body">
+							<li class="body01">
 								<h3>다양한 간식 제공</h3>
 								<p>4차 산업혁명의 선두주자로</p>
 								<p>발돋움하며 끊임없는</p>
@@ -155,7 +168,7 @@
 								<p>미래를 개척하고 있습니다.</p>
 							</li>
 							<li><img src="images/sb01_img002.jpg" alt=""></li>
-							<li class="body">
+							<li class="body01">
 								<h3>유기묘 지원</h3>
 								<p>4차 산업혁명의 선두주자로</p>
 								<p>발돋움하며 끊임없는</p>
