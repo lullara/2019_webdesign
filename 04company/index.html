@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>상자 안 고양이</title>
 	<link rel="stylesheet" href="css/reset.css">
@@ -40,23 +41,45 @@
 				 slider2Btn.goToNextSlide();
 				return false;
 			});
+			$("#main_header .lan li").click(function(){
+				var lang =$(this).index();
+				console.log(lang);
+				$("#main_header .lan li").removeClass();
+				$(this).addClass("on");	
+
+			});
+			$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					$(".menuView").stop().animate({top:0},300);
+				}else{
+					$(this).removeClass("change");
+					$(".menuView").stop().animate({top:"-100%"},300)
+				}
+			});
 
 		});
 		new WOW().init();
 	</script>
 </head>
 <body>
+	
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
 			<h1><a href="#">상자 안 고양이</a></h1>
-
-			<div class="nav_wrap">
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
 			</div>
+			<nav class="lan">
+				<ul class="clearfix">
+					<li class="on">KOR</a></li>
+					<li>ENG</li>
+				</ul>
+			</nav>
 			<nav id="main_menu">
 				<ul class="clearfix">
 					<li><a href="sub01.html">상자 안 소개</a></li>
@@ -268,7 +291,7 @@
 				<div class="menu">
 					<ul class="clearfix">
 						<li><a href="#">회사소개</a></li>
-						<li><a href="#">개인정보처리방침</a></li>
+						<li class="del"><a href="#">개인정보처리방침</a></li>
 						<li><a href="#">이용약관</a></li>
 						<li><a href="#">고객센터</a></li>
 						<li><a href="#">상담문의</a></li>
