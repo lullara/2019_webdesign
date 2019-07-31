@@ -5,11 +5,21 @@
 .header_top  h1{float: left; background:url(../images/new_logo.png) no-repeat; width: 170px; height: 90px; text-indent: -9999px; 
         position: absolute;top: -10px;}
 .header_top  h1 a{display: block; line-height: 116px;}
-.header_top > .main_menu{float: right; z-index: 1;}
+.header_top > #main_menu{position: absolute;right: 120px;}
 
-.main_menu>ul{}
-.main_menu>ul>li{float: left;}
-.main_menu>ul>li>a{display: block; line-height: 50px; padding: 0 30px; color:white; font-size:18px; text-shadow: 0 0 5px #000;}
+
+
+#main_menu>ul{}
+#main_menu>ul>li{float: left;}
+#main_menu>ul>li>a{display: block; line-height: 50px; padding: 0 18px; color:white; font-size:18px; text-shadow: 0 0 5px #000;}
+#main_menu>ul>li>a:after{content:"";display: block; width: 0;height: 7px; background-color: #f2ce16;transition:.3s;margin: 0 auto; }
+#main_menu>ul>li>a:hover:after{width: 100%;}
+
+#main_header .lan{float: right; }
+#main_header .lan li{float: left; border: 1px solid #f2ce16; width: 50px; height: 50px; font-size:18px; 
+    color:white; line-height: 50px;text-align: center; cursor: pointer;}
+#main_header .lan li.on{background-color: #f2ce16;}
+
 
 #main_header .txt{position: absolute; width: 1260px;text-align: center;top: 135px;color:white;}
 #main_header h2{font-size:44px; font-weight:bold;margin-bottom: 10px;}
@@ -62,6 +72,9 @@
 #section03 .card_wrap li{float: left;width: 315px; height: 315px}
 
 #section03 .body{padding: 60px 55px;}
+#section03 .body01{padding: 60px 55px;}
+#section03 .body:after{content:"";border-width: 20px; border-style: solid; 
+border-color: transparent transparent #ff0 transparent; position: absolute; top: 0; right: 0; z-index: 1;}
 #section03 .card_wrap h3{color:#afba02; margin-bottom: 20px; font-size:20px;}
 #section03 .card_wrap p{color:#8d8d8d; margin-bottom: 5px;}
 
