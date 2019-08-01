@@ -1,6 +1,6 @@
 @charset"utf-8";
 
-@media all and (min-width: 961px){
+
 
 body{min-width: 1260px;}
 #main_header{height: 1950px; position: relative; margin-bottom: 80px;}
@@ -93,7 +93,7 @@ body{min-width: 1260px;}
 .content .content3rd .slider2 div{float: left; width: 315px; height: 315px;}
 .content .content3rd .slider2 div.left{padding-left:33px;padding-top: 75px;}
 .content .content3rd .slider2 div.left:after{content:""; border-width: 20px; border-style:solid; 
-border-color:transparent transparent transparent #fff; position: absolute; left: 315px; top: 130px;}
+border-color:transparent transparent transparent #fff; position: absolute; left: 315px; top: 130px; z-index: 1;}
 .content .content3rd .btn{position: absolute; width: 82px; bottom: 40px;left: 185px;}
 .content .content3rd .btn img{float: left; }
 
@@ -213,7 +213,7 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 #footer .copylight{color:#a8a8a8; font-size: 14px;}
 
 #footer select{border: 1px solid #000; width: 180px; height: 45px; position: absolute; top: 50px; right: 0; text-indent: 5px;}
-}
+
 
 
 

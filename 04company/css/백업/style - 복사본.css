@@ -1,20 +1,26 @@
 @charset"utf-8";
+@import "pc.css" all and (min-width:961px);
+/*@import "tablet.css" all and (max-width:960px);
+@import "mobile.css" all and (max-width:630px);
+*/
 
 
-#main_header{height: 2335px; position: relative;}
+@media all and (max-width: 520px){
+
+#main_header{height: 2005px; position: relative;}
 #header_top{width:100%; height: 65px;}
 #header_top > h1{float: left; background:url(../images/new_logo_black.png) no-repeat; 
     width: 170px; height: 90px; text-indent: -9999px; 
         position: absolute;z-index: 1;top: 5px;left: 10px;}
 #header_top > h1 a{display: block; line-height: 116px;}
+#header_top > #main_menu{position:fixed; width: 100%; height: 100%;
+    background:rgba(0,0,0,1); z-index: 99999;}
 
-#header_top > #main_menu{position: fixed; width: 100%; height: 100%; 
-    background:rgba(255,255,255,.8)!important; z-index:99999;left: -100%;}
+#main_menu>ul{}
+#main_menu>ul>li{float: left;}
+#main_menu>ul>li>a{display: block; line-height: 50px; padding: 0 30px; 
+    color:#000; font-size:18px; }
 
-#main_menu>ul{position: absolute; left: 50%; top: 50%;transform:translate(-50%,-50%);}
-#main_menu>ul>li{text-align: center;}
-#main_menu>ul>li>a{display: block; text-align: center;line-height: 100px; padding: 0 30px; 
-    color:#000; font-size:2em;font-weight:bold; }
 
 
 #main_header .lan{position: absolute; top: 70px;right: 0; z-index: 1;}
@@ -46,8 +52,7 @@
 .toggleMenu.change .bar1{transform:rotate(-45deg);top:21px;background-color:#000;}
 .toggleMenu.change .bar2{opacity:0;}
 .toggleMenu.change .bar3{transform:rotate(45deg);top:21px;background-color:#000;}
-.toggleMenu.change{position: fixed !important; z-index:999999!important;right: 0;}
-
+.toggleMenu.change{position:fixed !important; z-index: 999999!important;}
 
 /*bxslider*/
 
@@ -95,7 +100,7 @@
 
 #main_header .content{width: 100%; height: 1800px;}
 
-#main_header .content li{float: left; width: 25%; height: 315px;}
+#main_header .content li{float: left; width: 25%; height: 260px;}
 
 
 
@@ -116,7 +121,7 @@
 
 #main_header .content .content2ed
 {width: 50%; position: relative; overflow: hidden; cursor: pointer;}
-#main_header .content .content2ed .img001{width:100%;
+#main_header .content .content2ed .img001{width:100%; height: 100%;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 #main_header .content .content2ed .iconPlay
 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
@@ -139,7 +144,7 @@ position: absolute; left: 50%; top: 130px; z-index: 1;}
 .content .content3rd .btn
 {position: absolute; width: 82px; bottom: 40px;left: 40px;}
 .content .content3rd .btn img{float: left; }
-.content .content3rd .slider2 div.right img{ width: 50%;position: absolute; left: 50%; top: 50%;transform:translateY(-50%);}
+.content .content3rd .slider2 div.right img{ width: 50%; height: 100%;position: absolute; left: 50%; top: 50%;transform:translateY(-50%);}
 
 .content .content3rd .bx-wrapper {
     -moz-box-shadow:none;
@@ -162,13 +167,13 @@ position: absolute; left: 50%; top: 130px; z-index: 1;}
 
 #main_header .content .content7st
 {position: relative;width: 100%; overflow: hidden;}
-#main_header .content .content7st img{width: 100%; 
-    position: absolute;left: 0; top: 40%; transform: translateY(-50%);}
-.content .content7st .card{position: absolute;top: 40px; left: 40px; color:#5e5e5e; }
+#main_header .content .content7st img{width: 100%; height: 260px;
+    position: absolute;left: 0; top: 50%; transform: translateY(-50%);}
+.content .content7st .card{position: absolute;top: 30px; left: 30px; color:#5e5e5e; }
 .content .content7st .card h3{font-size:18px; font-weight: normal}
 .content .content7st .card h3:after{content:"";display: block; width: 30px; height: 3px; 
 background-color: #000; margin: 20px 0;}
-.content .content7st .card p{font-size:2em;}
+.content .content7st .card p{font-size:1.8em;}
 
 #main_header .content .content8st{position: relative;width: 100%; overflow: hidden;}
 .content .content8st .card h3{font-size:18px; font-weight: normal}
@@ -181,12 +186,11 @@ background-color: #000; margin: 20px 0;}
 .content .content9st .card p{font-size:2.2em;}
 
 #main_header .content .content12st{background-color: #f1f2f7;position: relative;width: 100%; overflow: hidden;}
-#main_header .content .content12st img{position: absolute;left: 0;}
-.content .content12st .card{position: absolute;top: 70px; right: 50px; color:#5e5e5e; }
+#main_header .content .content12st img{position: absolute;left: -20px; height: 260px;}
+.content .content12st .card{position: absolute;top: 70px; right: 10px; color:#5e5e5e; }
 .content .content12st .card h3{font-size:18px; font-weight: normal}
-.content .content12st .card h3:after{content:"";display: block; width: 30px; height: 3px; background-color: #000; 
-margin: 20px 0;}
-.content .content12st .card p{font-size:2.2em;}
+.content .content12st .card h3:after{content:"";display: block; width: 30px; height: 3px; background-color: #000; margin: 20px 0;}
+.content .content12st .card p{font-size:1.8em;}
 
 #main_header .content .content10st{width: 50%;background-color: #f2ce16;padding-top: 45px;text-align: center; color: white;font-weight: bold;}
 #main_header .content .content11st{width: 50%;background-color: #413d3e;padding-top: 45px;text-align: center; color: white;font-weight: bold;}
@@ -236,13 +240,13 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 
 
 #section03{width: 100%;}
-#section03 li{float: left; width: 100%; height: 315px;
+#section03 li{float: left; width: 100%; height: 260px;
     color:white; position: relative; overflow: hidden;}
-#section03 li img{width: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
-#section03 .card{position: absolute; top: 40px;left: 40px;}
-#section03 .card h3{font-size: 35px;}
-#section03 .card h3:after{content:"";display: block;width: 50px; height: 3px; background-color: #fff; margin: 20px 0;}
-#section03 .card p{margin-bottom: 60px;}
+#section03 li img{width: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 260px;}
+#section03 .card{position: absolute; top: 30px;left: 30px;}
+#section03 .card h3{font-size: 30px;}
+#section03 .card h3:after{content:"";display: block;width: 50px; height: 3px; background-color: #fff; margin: 10px 0;}
+#section03 .card p{margin-bottom: 45px;}
 #section03 .card a{color:white; border: 1px solid #fff; padding: 15px 45px;}
 
 
@@ -266,3 +270,4 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 #footer .copylight{text-align: center;color:#a8a8a8; font-size: 14px;margin-bottom: 20px;}
 #footer .del{display: none;}
 #footer select{display: block; margin: 0 auto;border: 1px solid #000; width: 180px; height: 45px; text-indent: 5px;}
+} 

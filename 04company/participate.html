@@ -3,27 +3,27 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>고양이 일상</title>
+	<title>집사 참여</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/sub04style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script>
-		$(document).ready(function(){
+	$(document).ready(function(){
 			$(".content_wrap>div").hide();
 			$(".content_wrap>div").eq(0).show();
-			$("#main_header .sub_menu li").click(function(){
+			$("#sub_header .sub_menu li").click(function(){
 				var list = $(this).index();
 				console.log(list);	
-				$("#main_header .sub_menu li").removeClass();
-				$(this).addClass("active");
+					$("#sub_header .sub_menu li").removeClass("active");
+				$(this).addClass("active").addClass("w50");
 				$(".content_wrap>div").hide();
 				$(".content_wrap>div").eq(list).show();
 
 			});
-				$("#main_header .lan li").click(function(){
+				$("#sub_header .lan li").click(function(){
 				var lang =$(this).index();
 				console.log(lang);
-				$("#main_header .lan li").removeClass();
+				$("#sub_header .lan li").removeClass();
 				$(this).addClass("on");	
 
 			});
@@ -32,7 +32,7 @@
 	</script>
 </head>
 <body>
-	<header id="main_header">
+	<header id="sub_header">
 		<div class="header_top clearfix">
 			<h1><a href="index.html">상자 안 고양이</a></h1>
 			<nav class="lan">
@@ -41,44 +41,44 @@
 					<li>ENG</li>
 				</ul>
 			</nav>
-			<nav id="main_menu">
+			<nav id="sub_menu">
 				<ul class="clearfix">
-					<li><a href="sub01.html">상자 안 소개</a></li>
-					<li><a href="sub02.html">고양이 소개</a></li>
-					<li><a href="sub03.html">카페 메뉴</a></li>
-					<li><a href="sub04.html">고양이 일상</a></li>
-					<li><a href="sub05.html">집사 참여</a></li>
-					<li><a href="sub05.html">집사 참여</a></li>
+					<li><a href="company.html">상자 안 소개</a></li>
+					<li><a href="introduce.html">고양이 소개</a></li>
+					<li><a href="cafemenu.html">카페 메뉴</a></li>
+					<li><a href="everyday.html">고양이 일상</a></li>
+					<li><a href="participate.html">집사 참여</a></li>
+					<li><a href="support.html">유기묘지원</a></li>
 				</ul>
 			</nav>
 			<div class="txt">
-				<h2>고양이 일상</h2>
-				<p>고양이 일상을 소개 합니다.</p>
+				<h2>집사 참여</h2>
+				<p>더 나은 상자 안 고양이가 되겠습니다.</p>
 			</div>
 		</div>
 		
 		<nav class="sub_menu">
 			<ul class=clearfix>
-				<li class="active">고양이 사진</li>
-				<li>고양이 동영상</li>
+				<li class="active w50">이용 후기</li>
+				<li class="w50">건의 사항</li>
 			
 			</ul>
 		</nav>
 	</header>
-	<div id="content">
+	<div id="participate_content">
 		<div class="content_wrap">
 			<div class="ss01">
 				<div class="nav">
 					<ul class="clearfix">
 						<li><img src="images/home_btn.png" alt=""></li>
 						<li><img src="images/forword.png" alt=""></li>
-						<li><a href="sub04.html">고양이 일상</a></li>
+						<li><a href="sub05.html">집사 참여</a></li>
 						<li><img src="images/forword.png" alt=""></li>
-						<li><a href="#">고양이 사진</a></li>
+						<li><a href="#">이용 후기</a></li>
 					</ul>
 				</div>
 				<section class="section01">
-					<img src="images/sb04_img01.jpg" alt="">
+					<img src="images/sb05_img01.jpg" alt="">
 					
 				</section>
 			</div>
@@ -87,13 +87,13 @@
 					<ul class="clearfix">
 						<li><img src="images/home_btn.png" alt=""></li>
 						<li><img src="images/forword.png" alt=""></li>
-						<li><a href="sub02.html">고양이 일상</a></li>
+						<li><a href="sub05.html">집사 참여</a></li>
 						<li><img src="images/forword.png" alt=""></li>
-						<li><a href="#">고양이 동영상</a></li>
+						<li><a href="#">건의 사항</a></li>
 					</ul>
 				</div>
 				<section class="section01">
-					<img src="images/sb04_img02.jpg" alt="">
+					<img src="images/sb05_img02.jpg" alt="">
 					
 				</section>
 			</div>

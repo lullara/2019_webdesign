@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
@@ -48,15 +49,31 @@
 				$(this).addClass("on");	
 
 			});
+
+			
 			$(".toggleMenu").click(function(){
 				var myClass = $(this).attr("class");
 				console.log(myClass);
 				if(myClass == "toggleMenu"){
 					$(this).addClass("change");
-					$(".menuView").stop().animate({top:0},300);
+					$("#main_header #main_menu").stop().animate({left:-50},300);
+		
+					$(".box").css("display","block")
 				}else{
 					$(this).removeClass("change");
-					$(".menuView").stop().animate({top:"-100%"},300)
+					$("#main_header #main_menu").stop().animate({left:"-100%"},300);
+					
+				}
+			});
+			$(window).resize(function(){
+				var wSize = $(window).width();
+				console.log(wSize);
+				if(wSize > 960){
+					$("#header_top").find("toggleMenu").removeClass("change");
+				}else{
+					$("#header_top").find(".toggleMenu").removeClass("change");
+					$("main_manu").css({left:"-100%"});
+				
 				}
 			});
 
@@ -67,6 +84,7 @@
 <body>
 	
 	<header id="main_header">
+		<div class="box"></div>
 		<div id="header_top" class="clearfix">
 			<h1><a href="#">상자 안 고양이</a></h1>
 			<div class="toggleMenu">
@@ -82,12 +100,12 @@
 			</nav>
 			<nav id="main_menu">
 				<ul class="clearfix">
-					<li><a href="sub01.html">상자 안 소개</a></li>
-					<li><a href="sub02.html">고양이 소개</a></li>
-					<li><a href="sub03.html">카페 메뉴</a></li>
-					<li><a href="sub04.html">고양이 일상</a></li>
-					<li><a href="sub05.html">집사 참여</a></li>
-					<li><a href="sub06.html">유기묘 지원</a></li>
+					<li><a href="company.html">상자 안 소개</a></li>
+					<li><a href="introduce.html">고양이 소개</a></li>
+					<li><a href="cafemenu.html">카페 메뉴</a></li>
+					<li><a href="everyday.html">고양이 일상</a></li>
+					<li><a href="participate.html">집사 참여</a></li>
+					<li><a href="support.html">유기묘지원</a></li>
 				</ul>
 			</nav>
 		</div>
