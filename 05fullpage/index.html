@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>한강몽땅축제</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gothic+A1&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#fullpage").fullpage({
+				anchors:["1st","2ed","3rd","4st",],
+				menu:"#topmenu"
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div id="menu_wrap">
+		<nav id="main_menu">
+			<ul class="topMenu clearfix">
+				<li data-menuanchor="1st"><a href="#1st">한강몽땅 소개</a></li>
+				<li data-menuanchor="2ed"><a href="#2ed">프로그램 안내</a></li>
+				<li data-menuanchor="3rd"><a href="#3rd">예약하기</a></li>
+				<li data-menuanchor="4st"><a href="#4st">커뮤니티</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="fullpage">
+		<div class="section page" id="page1" data-anchor="1st"></div>
+		<div class="section page" id="page2" data-anchor="2ed"></div>
+		<div class="section page" id="page3" data-anchor="3rd"></div>
+		<div class="section page" id="page4" data-anchor="4st"></div>
+	</div>
+</body>
+</html>
