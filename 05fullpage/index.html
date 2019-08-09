@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,39 +7,253 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>한강몽땅축제</title>
+	<title>한강몽땅 여름축제♬</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css" integrity="sha384-zGzb8nSrN9lm5PPcfztVC5DjjTs5sVStV85IH8x51fM9yIwmI+Uvh3RZDJlrpPWQ" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gothic+A1&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script>
 		$(document).ready(function(){
 			$("#fullpage").fullpage({
-				anchors:["1st","2ed","3rd","4st",],
-				menu:"#topmenu"
+				anchors:["1st","2ed","3rd","4st","5st"],
+				menu:"#topMenu",
+				navigation:true,
+				navigationPosition:'right',
+				navigationTooltips:["한강몽땅","한강몽땅 소개","프로그램 소개","예약하기","커뮤니티"],
+				// afterLoad:function(anchorslink,index){
+				// 	console.log("anchor:" + anchorslink + ", index:" + index);
+				// 	if(index == 2){
+				// 		$("#onView").addClass("move");
+
+				// 	}else{
+				// 		$("#onView").removeClass("move");
+					
+				// 	}
+
+				// }
 			});
 
+			// 클릭했을때 색상 변하는 거
+			$("#main_menu ul li a").click(function(){
+				var menu = $(this).index();
+				$("#main_menu ul li a").removeClass("active");	
+				$(this).addClass("active");
+			});
+			
+
+			// $(window).scroll(function(){
+			// 	var sct = $(window).scrollTop();
+			// 	console.log("스크롤 값 : "sct);
+			// });
+			
+			
 		});
+
 	</script>
 </head>
 <body>
 	<div id="menu_wrap">
 		<nav id="main_menu">
 			<ul class="topMenu clearfix">
-				<li data-menuanchor="1st"><a href="#1st">한강몽땅 소개</a></li>
-				<li data-menuanchor="2ed"><a href="#2ed">프로그램 안내</a></li>
-				<li data-menuanchor="3rd"><a href="#3rd">예약하기</a></li>
-				<li data-menuanchor="4st"><a href="#4st">커뮤니티</a></li>
+				<li data-menuanchor="1st" ><a href="#1st" class="active"><img src="images/logo_new.png" alt=""></a></li>
+				<li data-menuanchor="2st"><a href="#2ed">한강몽땅 소개</a></li>
+				<li data-menuanchor="3rd"><a href="#3rd">프로그램 안내</a></li>
+				<li data-menuanchor="4st"><a href="#4st">예약하기</a></li>
+				<li data-menuanchor="5st"><a href="#5st">커뮤니티</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div id="fullpage">
-		<div class="section page" id="page1" data-anchor="1st"></div>
-		<div class="section page" id="page2" data-anchor="2ed"></div>
+		<div class="section page" id="page1" data-anchor="1st">
+			<div id="content">
+				<section class="section01">
+					<ul class="clearfix">
+						<li class="s_01">
+							<img src="images/ship.png" alt="" class="ship">
+							<h2 class="fir">2019 한강몽땅</h2>
+							<h3>여름축제</h3>
+							<p>7.19(금)부터 8.18(일)까지 ‘한강공원’ 일대에서 즐겨요! 
+							</p>
+						</li>
+						<li class="s_02">
+							<div class="clearfix">
+								<div class="card_body">
+									<a href="#">
+										<img src="images/icon001.png" alt="icon002">
+										<p>프로그램 안내</p>
+									</a>
+								</div>
+								<div class="card_body">
+									<a href="#">
+										<img src="images/icon003.png" alt="icon003">
+										<p>프로그램 다운</p>
+									</a>
+								</div>
+								<div class="card_body">
+									<a href="#">
+										<img src="images/icon002.png" alt="icon001">
+										<p>프로그램 예약</p>
+									</a>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+				</section>	
+				<section class="section02">
+					<ul class="clearfix">
+						<li class="s_01">
+							
+							<h3>프로그램 소개</h3>
+							<p>한강 몽땅 테마별 프로그램 소개</p>
+							<div class="body_txt">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="images/icon004.png" alt="">
+											<h3>시원한강</h3>
+											<p>수상·물놀이·도전</p>
+											<img src="images/icon_more.png" alt="" class="more">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/icon005.png" alt="">
+											<h3>감동한강</h3>
+											<p>공연·예술·열정</p>
+											<img src="images/icon_more.png" alt="" class="more">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/icon006.png" alt="">
+											<h3>함께한강</h3>
+											<p>가족·휴식·환경</p>
+											<img src="images/icon_more.png" alt="" class="more">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="s_02">
+							<h3>오늘의 행사</h3>
+							<p>한강에서 펼쳐지는 신나는 여름</p>
+							<div class="body_txt">
+								<ul>
+									<li>
+										<a href="#">
+										  	<span class="title">밤섬체험-이야기 수...</span><br>
+										  	<span class="time">14:00~16:00</span><br>
+										  	<span class="locate">[여의도]</span><br>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										  	<span class="title">한강퍼펫파크</span><br>
+										  	<span class="time">17:00~21:00</span><br>
+										  	<span class="locate">[뚝섬]</span><br>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										  	<span class="title">한강줄배타기</span><br>
+										  	<span class="time">주중 12:00~17:00/주말:10:00~19:00</span><br>
+										  	<span class="locate">[양화]</span><br>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										  	<span class="title">한강여름수영장</span><br>
+										  	<span class="time">09:00~19:00</span><br>
+										  	<span class="locate">[여의도,양화,난지,잠원,잠실,광나루,뚝...]</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										  	<span class="title">한여름 밤의 별나라 여행</span><br>
+										  	<span class="time">18:00~21:30(일)시립서울천...</span><br>
+										  	<span class="locate">[뚝섬]</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										  	<span class="title">시네마퐁당</span><br>
+										  	<span class="time">19:00~22:00(상영시작 20:00)</span><br>
+										  	<span class="locate">[난지]</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="s_03">
+							<h3>공지사항</h3>
+							<p>한강 몽땅 테마별 프로그램 소개</p>
+							<div class="body_txt">
+								<ul>
+									<li>
+										<a href="#" class="clearfix">
+											<span class="txt">8.6(화) 비예보로 인한 행사 취소</span>
+											<span class="data">2019.08.07</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="clearfix">
+											<span class="txt">8.4(일) 행사 취소 공지</span>
+											<span class="data">2019.08.04</span>
+										</a>
+									</li>
+									
+					
+								</ul>
+								
+							</div>
+						</li>
+						<li class="s_04">
+							<img src="images/tube.png" alt="" class="tube">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/ico_instagram.png" alt="">
+										<span class="txt">인스타그램</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/ico_kakaoplus.png" alt="">
+										<span class="txt">카카오친구</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/ico_facebook.png" alt="">
+										<span class="txt">페이스북</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+							
+				</section>
+		
+
+			</div>
+		</div>
+		<div class="section page" id="page2" data-anchor="2ed">
+			<div id="content02">
+				<secttion class="s_01">
+					<img src="images/sub_bg01.jpg" alt="">
+				</secttion>
+			</div>
+		</div>
 		<div class="section page" id="page3" data-anchor="3rd"></div>
 		<div class="section page" id="page4" data-anchor="4st"></div>
+		<div class="section page" id="page5" data-anchor="5st"></div>
+
 	</div>
+	
 </body>
 </html>

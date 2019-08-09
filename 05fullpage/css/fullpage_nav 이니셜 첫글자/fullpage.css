@@ -96,6 +96,7 @@ html.fp-enabled,
     transition: none !important;
 }
 
+
 .fp-slidesNav{
     position: absolute;
     z-index: 4;
@@ -103,10 +104,10 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    left: 50% !important;
-    bottom: 30px;
+    left:50%;
+    bottom:30px;
+    
 
-   
 }
 .fp-slidesNav.fp-bottom {
     bottom: 17px;
@@ -140,16 +141,13 @@ html.fp-enabled,
     cursor: pointer;
     text-decoration: none;
 }
-
 .fp-slidesNav ul li a.active span,
-
 .fp-slidesNav ul li:hover a.active span{
     height: 12px;
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
-
 .fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
@@ -158,7 +156,7 @@ html.fp-enabled,
     width: 4px;
     border: 0;
     background: #333;
-    _left: 50%;
+    left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
     -webkit-transition: all 0.1s ease-in-out;
@@ -166,7 +164,6 @@ html.fp-enabled,
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-,
 .fp-slidesNav ul li:hover a span{
     width: 10px;
     height: 10px;
@@ -186,6 +183,41 @@ html.fp-enabled,
 }
 
 /*Only display content to screen readers*/
+/*.fp-sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+#fp-nav{
+    position: fixed;right: 20px;width: 100px;
+    background-color:skyblue;
+    top:50%;
+}
+#fp-nav ul{}
+#fp-nav ul li{height: 20px;position: relative;}
+#fp-nav ul li a{display: block;height: 20px;}
+#fp-nav ul li a span{
+    display: block;width: 30px;height: 5px;
+    background-color: #f00;transition:0.3s;
+    position: absolute;right:0; 
+}
+#fp-nav ul li a.active span{width:100px;}
+#fp-nav ul li .fp-tooltip{
+    display: none;width:200px;line-height:20px;
+    text-align:center;background-color: #fff;
+    position: absolute;top:0;left:-200px;
+}
+#fp-nav ul li:hover span{width:100px;}
+#fp-nav ul li:hover .fp-tooltip{
+    display: block;background-color: #f00;}
+#fp-nav ul li a.active + .fp-tooltip{display: block;}*/
+
+
 .fp-sr-only{
     position: absolute;
     width: 1px;
@@ -199,38 +231,27 @@ html.fp-enabled,
 
 
 
-
-
-
 #fp-nav{
-    position: fixed; right:20px;width: 60px; 
-    top: 50%;}
-
-#fp-nav ul{}
-#fp-nav ul li
-{height: 20px;position: relative;}
-#fp-nav ul li a{
-    display: block; height: 20px;}
-#fp-nav ul li a span{
-    display: block; width: 30px; 
-    height: 5px; background-color: #000; position: absolute; right: 0;}
-
-/*FF9110즈황색*/
-
-#fp-nav ul li a.active span{
-    width: 70px; transition:0.3s; background-color: #FF9110; }
-#fp-nav ul li .fp-tooltip{
-    display: none; width: 110px; line-height: 20px;
-    text-align: center; background-color: _#fff;
-    position: absolute;top: -8px; left: -120px; color:white;
+    position: fixed;right: 0;width: 180px;
+    _background-color:skyblue;
+    top:50%;
 }
-#fp-nav ul li:hover span{
-    width: 70px;background-color: #163f82; }
-#fp-nav ul li:hover .fp-tooltip{
-    display: block;_background-color: #f00;}
-#fp-nav ul li .fp-tooltip{
-    display: none;}
+#fp-nav ul{}
+#fp-nav ul li{height: 20px;position: relative;margin-bottom:20px;}
+#fp-nav ul li a{display: block;height: 20px;}
+#fp-nav ul li a span{
+    display: block;width: 0px;height: 3px;
+    background-color: #fff;transition:0.3s;
+    position: absolute;right:0;top:8px;
+}
+#fp-nav ul li a.active span{width:60px;}
 
-#fp-nav ul li a.active + .fp-tooltip{position: absolute;top:-8px;
-    display: block; color:#fff; text-shadow: 2px 2px 3px #000; 
-    border-radius: 10px;}
+#fp-nav ul li .fp-tooltip{
+    display:block;width:100px;line-height:20px;
+        position: absolute;top:0;left:0px;
+        text-align:right;font-weight:bold;color:white;
+}
+#fp-nav ul li .fp-tooltip span{display: none;}
+
+
+#fp-nav ul li a.active + .fp-tooltip span{display: inline-block;}

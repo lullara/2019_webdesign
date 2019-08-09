@@ -218,19 +218,19 @@ html.fp-enabled,
 /*FF9110즈황색*/
 
 #fp-nav ul li a.active span{
-    width: 70px; transition:0.3s; background-color: #FF9110; }
+    width: 80px; transition:0.3s; background-color: #FF9110; }
 #fp-nav ul li .fp-tooltip{
     display: none; width: 110px; line-height: 20px;
     text-align: center; background-color: _#fff;
     position: absolute;top: -8px; left: -120px; color:white;
 }
 #fp-nav ul li:hover span{
-    width: 70px;background-color: #163f82; }
+    width: 80px;background-color: #163f82; }
 #fp-nav ul li:hover .fp-tooltip{
     display: block;_background-color: #f00;}
 #fp-nav ul li .fp-tooltip{
     display: none;}
 
 #fp-nav ul li a.active + .fp-tooltip{position: absolute;top:-8px;
-    display: block; color:#fff; text-shadow: 2px 2px 3px #000; 
+    display: block; background:rgba(255,255,255,0.5); color:#000; 
     border-radius: 10px;}
