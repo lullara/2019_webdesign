@@ -24,17 +24,17 @@
 				navigation:true,
 				navigationPosition:'right',
 				navigationTooltips:["한강몽땅","한강몽땅 소개","프로그램 소개","예약하기","커뮤니티"],
-				// afterLoad:function(anchorslink,index){
-				// 	console.log("anchor:" + anchorslink + ", index:" + index);
-				// 	if(index == 2){
-				// 		$("#onView").addClass("move");
+				afterLoad:function(anchorslink,index){
+					console.log("anchor:" + anchorslink + ", index:" + index);
+					if(index == 3){
+						$("#onView").addClass("move");
 
-				// 	}else{
-				// 		$("#onView").removeClass("move");
+					}else{
+						$("#onView").removeClass("move");
 					
-				// 	}
+					}
 
-				// }
+				}
 			});
 
 			// 클릭했을때 색상 변하는 거
@@ -244,14 +244,443 @@
 		</div>
 		<div class="section page" id="page2" data-anchor="2ed">
 			<div id="content02">
-				<secttion class="s_01">
-					<img src="images/sub_bg01.jpg" alt="">
-				</secttion>
+				<section class="section01">
+					<img src="images/sub_img001.jpg" alt="" class="img">
+					<img src="images/balloon.png" alt="" class="balloon01">
+					<img src="images/balloon.png" alt="" class="balloon02">
+					<img src="images/balloon.png" alt="" class="balloon03">
+					<img src="images/balloon.png" alt="" class="balloon04">
+				</section>
 			</div>
 		</div>
-		<div class="section page" id="page3" data-anchor="3rd"></div>
-		<div class="section page" id="page4" data-anchor="4st"></div>
-		<div class="section page" id="page5" data-anchor="5st"></div>
+		<div class="section page" id="page3" data-anchor="3rd">
+			<div id="content03">
+				<section class="section01" id="onView">
+					<ul class="clearfix">
+						<li class="s_01">
+							<div class="body_title">
+								<span class="title">시원한강</span>
+								<span class="txt">수상/물놀이/도전</span>
+							</div>
+							<div class="body">
+								<ul>
+									<li class="clearfix">
+										<a href="#">
+											<img src="images/cool_thumb001.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">2019 샤워런</span>
+												<span class="body_txt">가장 핫한 날 펼쳐지는 가장 쿨한 섬머 페스티벌 2019 샤워런 서울 힙하고 트랜디한 사람들의 여름 축제 2019 SHOWER RUN SEOUL</span>
+												
+											</div>
+										</a>
+									<li>
+										<a href="#">
+											<img src="images/cool_thumb002.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강몽땅 종이배경주대회</span>
+												<span class="body_txt">종이배 타고 피서가자! 한강에 푹 빠져보자! 종이로 배를 직접 만들고 한강에 배를 띄워 50m 반환점을 돌아오는 경기!</span>
+											</div>
+										</a>
+									</li>	
+									<li>
+										<a href="#">
+											<img src="images/cool_thumb003.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강줄배타기</span>
+												<span class="body_txt">옛 한강의 줄배타기 체험</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/cool_thumb004.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강워터피크닉-물싸움축제</span>
+												<span class="body_txt">한강으로 떠나는 힐링 워터피크닉!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/cool_thumb005.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강여름수영장</span>
+												<span class="body_txt">도심에서 즐길 수 있는 한강피서지</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/cool_thumb006.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강수상놀이터</span>
+												<span class="body_txt">연인, 가족, 친구 모두가 한 번에 즐길 수 있는 수상놀이터!! 복잡한 물놀이 이제 한강 수상놀이터에서 한 번에 즐기자!!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/cool_thumb007.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">제17회 서울특별시 철인3종협회장배 아쿠아슬론대회</span>
+												<span class="body_txt">무더운 여름 시원한 한강에서 자신의 한계에 도전하라!</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								
+							</div>
+						</li>
+						<li class="s_02">
+							<div class="body_title">
+								<span class="title">감동한강</span>
+								<span class="txt">수상/물놀이/도전</span>
+							</div>
+							<div class="body">
+								<ul>
+									<li class="clearfix">
+										<a href="#">
+											<img src="images/touch_thumb001.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강다리밑영화제</span>
+												<span class="body_txt">한 여름 한강에서만 만날 수 있는 가장 시원하고 이색적인 영화관!</span>
+												
+											</div>
+										</a>
+									<li>
+										<a href="#">
+											<img src="images/touch_thumb002.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">몽땅크루즈타운</span>
+												<span class="body_txt">“먹마타즐” 먹고, 마시고, 타고, 즐기는 “몽땅 크루즈 타운” “밤낮물땅” 밤이나 낮이나 물 위나 땅 위나 놀 거리 가득한 “몽땅 크루즈 타운”</span>
+											</div>
+										</a>
+									</li>	
+									<li>
+										<a href="#">
+											<img src="images/touch_thumb003.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강소셜댄스페스타</span>
+												<span class="body_txt">한강 야경을 배경으로 펼쳐지는 소셜댄스의 세계</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/touch_thumb004.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">불의 정원</span>
+												<span class="body_txt"><불의정원>을 통해 생명의 공간 ‘한강’을 표현하다!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/touch_thumb005.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강별빛소극장</span>
+												<span class="body_txt">나만의 큰 극장을 만난다, 별빛소극장!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/touch_thumb006.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">어이야 술비야~진도닻배 한강놀이</span>
+												<span class="body_txt">어이야 술비야~ 한강에서 만나는 구성진 뱃노래와 남도민요 한마당~!!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/touch_thumb007.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">외로운 인형 제작자의 외출</span>
+												<span class="body_txt">한강에서 만나는 외로운 인형제작자의 움직이는 작업실</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								
+							</div>
+						</li>
+						<li class="s_03">
+							<div class="body_title">
+								<span class="title">함께한강</span>
+								<span class="txt">자연/생태/휴식</span>
+							</div>
+							<div class="body">
+								<ul>
+									<li class="clearfix">
+										<a href="#">
+											<img src="images/with_thumb001.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">2019 한강빌리지</span>
+												<span class="body_txt">“1919 마포나루 장터, 한강빌리지로 새롭게 돌아왔소!”</span>
+												
+											</div>
+										</a>
+									<li>
+										<a href="#">
+											<img src="images/with_thumb002.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">서울밤도깨비야시장</span>
+												<span class="body_txt">한여름 밤, 한강에서 볼거리, 먹거리 즐길거리가 한자리에 펼쳐진다.</span>
+											</div>
+										</a>
+									</li>	
+									<li>
+										<a href="#">
+											<img src="images/with_thumb003.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">서울자원레이스</span>
+												<span class="body_txt">한강의 재활용 일회용품이 멋진 자동차가 되다!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/with_thumb004.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강나이트워크42K</span>
+												<span class="body_txt">한강에서 당신의 열정을 걸어라!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/with_thumb005.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">부여군과 함께하는 한강열기구체험</span>
+												<span class="body_txt">환상적인 한강의 야경을 열기구에 올라 즐겨보세요~</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/with_thumb006.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">밤섬체험-밤섬 이야기 속으로, 수달아 놀자</span>
+												<span class="body_txt">마포대교 위에 체험관이 있다고?! 밤섬에 알고 싶다면 밤섬생태체험관으로! 무료로 즐기는 AR, VR체험! 밤섬생태체험관으로 오세요!</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/with_thumb007.jpg" alt="">
+											<div class="txt_right">
+												<span class="body_title">한강몽땅 여름생태학교</span>
+												<span class="body_txt">11개 한강공원에서 총 60여 가지의 생태프로그램을!</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="section page" id="page4" data-anchor="4st">
+			<div id="content04">
+				<section class="section01">
+					<table>
+						<thead>
+							<tr>
+								<th>테마</th>
+								<th>프로그램명</th>
+								<th>공원</th>
+								<th>행사일자</th>
+								<th>시간</th>
+								<th>예약기간</th>
+								<th>예약</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>시원한강</td>
+								<td>2019 샤워런 서울</td>
+								<td>난지</td>
+								<td>8.17.</td>
+								<td>14:00 ~ 21:00</td>
+								<td>5.6. ~</td>
+								<td>
+									단체접수
+									<button type="button">예약</button>
+								</td>
+							</tr>
+							<tr>
+								<td>함께한강</td>
+								<td>한강나이트워크42K</td>
+								<td>여의도</td>
+								<td>7.27.</td>
+								<td>16:00 ~ 익일07:00</td>
+								<td>4.25. ~ 7.7(24시)</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>함께한강</td>
+								<td>서울자원레이스</td>
+								<td>뚝섬</td>
+								<td>7.27~28</td>
+								<td>12:00~18:00</td>
+								<td>6.20 ~ 7.22(15시)</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>시원한강</td>
+								<td>한강수상놀이터</td>
+								<td>뚝섬</td>
+								<td> 평일 13:00~19:00<br>
+								주말, 공휴일 10:00~19:00</td>
+								<td>9:00~17:00</td>
+								<td>-</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>시원한강</td>
+								<td>수상안전교실</td>
+								<td>양화</td>
+								<td>8.7~8.11</td>
+								<td>09:00~17:00</td>
+								<td>7.15~7.19(18:00)</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>함께한강</td>
+								<td>로맨틱가든</td>
+								<td>여의도</td>
+								<td>8.1~17</td>
+								<td>18:00~22:00</td>
+								<td>~7.23~8.17</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>감동한강</td>
+								<td>한강브리즈웨이: At the river</td>
+								<td>난지</td>
+								<td>8.15</td>
+								<td>13:00~21:00</td>
+								<td>-</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>함께한강</td>
+								<td>미스터캡틴</td>
+								<td>망원</td>
+								<td>8.15, 8.17~18</td>
+								<td>13:00~18:30</td>
+								<td>7.1~8.17 (17시)</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>함께한강</td>
+								<td>한여름 밤의 별나라 여행</td>
+								<td>뚝섬</td>
+								<td>8.7~11, 15~18</td>
+								<td>18:00~21:30</td>
+								<td>이용예정 2일 전까지</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>시원한강</td>
+								<td>워터피크닉 물싸움축제</td>
+								<td>난지</td>
+								<td>8.3~4</td>
+								<td>11:00~18:00</td>
+								<td>7.16~8.4</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>감동한강</td>
+								<td>저 물 한가운데 떠어</td>
+								<td>뚝섬</td>
+								<td>7.20~28(7.22 휴무)</td>
+								<td>14:00~20:00</td>
+								<td>~7.26</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>시원한강</td>
+								<td>레인보우브릿지 요트페스티벌</td>
+								<td>반포</td>
+								<td>7.19~8.18</td>
+								<td>18:30~22:30</td>
+								<td>7.1~8.18</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+							<tr>
+								<td>시원한강</td>
+								<td>한강자전거한바퀴</td>
+								<td>여의도 (출발지/도착지)</td>
+								<td>8.15</td>
+								<td>07:00~13:00 (08:00 출발)</td>
+								<td>7.1~8.9</td>
+								<td>개인접수<button type="button">예약</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+		</div>
+		<div class="section page" id="page5" data-anchor="5st">
+			<div id="content05">
+				<section class="section01">
+					<h3>공지사항</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>순번</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>작성일</th>
+								<th>조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>공지</td>
+								<td>8.12(월) 우천으로 인한 행사 취소 공지</td>
+								<td>관리자</td>
+								<td>2019.08.12</td>
+								<td>286</td>
+								
+							</tr>
+							<tr>
+								<td>공지</td>
+								<td>8.6(화) 비예보로 인한 행사취소 공지</td>
+								<td>관리자</td>
+								<td>2019.08.07</td>
+								<td>478</td>	
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>7.27(토) 우천으로 인한 행사 취소 공지</td>
+								<td>관리자</td>
+								<td>2019.07.27</td>
+								<td>623</td>	
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>7.26(금) 우천으로 인한 행사 취소 공지</td>
+								<td>관리자</td>
+								<td>2019.07.26	</td>
+								<td>898</td>	
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<div class="section02 clearfix">
+					<div class="s_01">
+						
+					</div>
+					<div class="s_02"></div>
+				</div>
+
+			</div>
+		</div>
 
 	</div>
 	
