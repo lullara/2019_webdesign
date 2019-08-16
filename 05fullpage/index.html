@@ -11,11 +11,13 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css" integrity="sha384-zGzb8nSrN9lm5PPcfztVC5DjjTs5sVStV85IH8x51fM9yIwmI+Uvh3RZDJlrpPWQ" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gothic+A1&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
 			$("#fullpage").fullpage({
@@ -27,11 +29,14 @@
 				afterLoad:function(anchorslink,index){
 					console.log("anchor:" + anchorslink + ", index:" + index);
 					if(index == 3){
-						$("#onView").addClass("move");
-
+						$("#onView1").addClass("move");
+						$("#onView2").addClass("move");
+						$("#onView3").addClass("move");
 					}else{
-						$("#onView").removeClass("move");
-					
+						$("#onView1").removeClass("move");
+						$("#onView2").removeClass("move");
+						$("#onView3").removeClass("move");
+						
 					}
 
 				}
@@ -43,7 +48,24 @@
 				$("#main_menu ul li a").removeClass("active");	
 				$(this).addClass("active");
 			});
-			
+
+			var myslider = $(".slider").bxSlider({
+				auto:true, 
+				controls:false
+
+			});
+			$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false; //hash tag 방지
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				return false; //hash tag 방지
+			});
+
+
+
+
 
 			// $(window).scroll(function(){
 			// 	var sct = $(window).scrollTop();
@@ -255,9 +277,9 @@
 		</div>
 		<div class="section page" id="page3" data-anchor="3rd">
 			<div id="content03">
-				<section class="section01" id="onView">
+				<section class="section01" >
 					<ul class="clearfix">
-						<li class="s_01">
+						<li class="s_01" id="onView1">
 							<div class="body_title">
 								<span class="title">시원한강</span>
 								<span class="txt">수상/물놀이/도전</span>
@@ -331,7 +353,7 @@
 								
 							</div>
 						</li>
-						<li class="s_02">
+						<li class="s_02" id="onView2">
 							<div class="body_title">
 								<span class="title">감동한강</span>
 								<span class="txt">수상/물놀이/도전</span>
@@ -405,7 +427,7 @@
 								
 							</div>
 						</li>
-						<li class="s_03">
+						<li class="s_03" id="onView3">
 							<div class="body_title">
 								<span class="title">함께한강</span>
 								<span class="txt">자연/생태/휴식</span>
@@ -674,9 +696,40 @@
 				</section>
 				<div class="section02 clearfix">
 					<div class="s_01">
-						
+						<ul class="slider">
+							<li><img src="images/p01.jpg" alt="p01"><span class="txt">한강워터피크닉-물싸움축제</span></li>
+							<li><img src="images/p02.jpg" alt="p02"><span class="txt">한강워터피크닉-물싸움축제</span></li>
+							<li><img src="images/p03.jpg" alt="p03"><span class="txt">한강워터피크닉-물싸움축제</span></li>
+							<li><img src="images/p04.jpg" alt="p04"><span class="txt">한여름 밤의 별나라 여행</span></li>
+							<li><img src="images/p05.jpg" alt="p05"><span class="txt">한여름 밤의 별나라 여행</span></li>
+							<li><img src="images/p06.jpg" alt="p06"><span class="txt">한여름 밤의 별나라 여행</span></li>
+						</ul>
+						<div class="slide_btn">
+							<div class="prevBtn"><img src="images/btn_prev_s.png" alt=""></div>
+							<div class="nextBtn"><img src="images/btn_next_s.png" alt=""></div>
+						</div>
+
 					</div>
-					<div class="s_02"></div>
+					<div class="s_02">
+						<h3>생생영상</h3>
+						<ul class="clearfix">
+
+							<li class="fir">
+								<a href="https://youtu.be/Q3RVOEutDFg" class="movie" title="영상01">
+								<img src="images/m01.jpg" alt="영상1"></a></li>
+							<li class="fir">
+								<a href="http://videos.seoul.go.kr/player_seoul.jsp?ocode=20813" class="movie" title="영상02"><img src="images/m02.jpg" alt="영상2"></a></li>
+							<li class="fir">
+								<a href="http://videos.seoul.go.kr/player_seoul.jsp?ocode=20817" class="movie" title="영상03"><img src="images/m03.jpg" alt="영상3"></a></li>
+							<li class="sec">
+								<a href="https://youtu.be/0vByTglmtpc" class="movie" title="영상04"><img src="images/m04.jpg" alt="영상4"></a></li>
+							<li class="sec">
+								<a href="https://youtu.be/OBq-ezo6_Gg" class="movie" title="영상05"><img src="images/m05.jpg" alt="영상5">
+								</a></li>
+							<li class="sec">
+								<a href="http://videos.seoul.go.kr/player_seoul.jsp?ocode=20814" class="movie" title="영상06"><img src="images/m06.jpg" alt="영상6"></a></li>
+						</ul>
+					</div>
 				</div>
 
 			</div>
