@@ -51,8 +51,10 @@
 /*content*/
 #content_wrap{height: 1100px;width: 100%; background:url(../images/bg_img01.jpg) no-repeat; background-size: cover;padding-top:60px;}
 /*#content_wrap .bgimg{width: 750px; height: 533px; background:url(../images/bg_img02.png) no-repeat; background-color: #fff;}*/
+.bgimg{position: relative;width: 1400px; margin: 0 auto;}
+.bgimg img{position: absolute; top: 30px;right: 10px;}
 #content_wrap .bgimg .section_wrap{width: 980px; margin: 0 auto;}
-#content_wrap .section_wrap .section01{width: 482px; height: 560px; float: left; margin-bottom: 16px;}
+#content_wrap .section_wrap .section01{width: 482px; height: 560px; float: left; margin-bottom: 16px; position: relative;}
 #content_wrap .section01>ul>li{width: 233px; height: 240px; float: left; margin-right: 16px; margin-bottom: 16px;}
 #content_wrap .section01>ul>li:nth-child(1){width: 100%;height: 330px; background-color: #fff;}
 #content_wrap .section01>ul>li:nth-child(2){width: 233px; height: 215px; background:url(../images/card_img01.jpg) no-repeat;
@@ -202,3 +204,22 @@
 #footer .footer_wrap .footer_menu>ul>li>a{display: block; font-weight: bold;}
 #footer .footer_wrap address{font-style:normal; font-size:0.9em; color:#707070;}
 #footer .footer_wrap .copyright{font-size: 0.9em;color:#707070; }
+
+
+
+/*------------서브------------*/
+
+/*content*/
+#content_wrap_sub{height: 1300px;background-color: #efefef;}
+#content_wrap_sub .bg_patten{height: 1300px;background:url(../images/patten.png) ;}
+#content_wrap_sub .bg_patten1{height: 290px;background:url(../images/patten1.png);}
+#content_wrap_sub .box{height: 290px; background:rgba(36,43,93,0.3);}
+#content_wrap_sub .visual{width: 100%; height: 290px; background:url(../images/sub_img01.jpg) no-repeat; background-size: cover;}
+#content_wrap_sub .visual h2{color: white; font-size: 5em; text-align: center;padding-top: 25px; }
+#content_wrap_sub .visual h2:after{content:""; width: 500px; height: 2px; background-color: #fff;}
+#content_wrap_sub .visual p{color: white;font-size: 1.2em; text-align: center; padding-top: 10px;}
+
+#content_wrap_sub .content{width: 980px; margin: 0 auto;position: relative; }
+#content_wrap_sub .content .section01{margin: 0 auto; width: 980px; height: 928px; background-color: #fff; 
+	position: absolute; top: -50px; left: 50%; transform:translate(-50%, 0%); 
+	border-top: 5px solid #0e73a7; border-bottom: 5px solid #0e73a7;}

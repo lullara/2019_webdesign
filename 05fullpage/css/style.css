@@ -289,14 +289,16 @@ color:#777;}
 #page5 .prevBtn{position: absolute;left: 25px; top: 40%; }
 #page5 .nextBtn{position: absolute;right: 25px; top: 40%;}
 #page5 span.txt{text-align: center; display: block;padding-top: 30px;}
-#page5 .section02 .s_02{float: right; width: 551px; height: 410px; background-color: #f0f; padding-top: 10px ;}
+#page5 .section02 .s_02{float: right; width: 575px; height: 410px; background-color:#fff ; padding-top: 10px ; border-top: 4px solid #ff9110;}
+#page5 .section02 .s_02 h3{color:#000;}
 
-
-#page5 .s_02 #fir{padding-top: 10px; margin-bottom: 40px;}
+#page5 .s_02 #fir{padding-top: 10px; margin-bottom: 20px;}
 #page5 .s_02 ul>li{float: left;margin-right:16px; }
 #page5 .s_02 ul>li:nth-child(3),
 #page5 .s_02 ul>li:nth-child(6){margin-right: 0;}
-
+#page5 p.tit{font-size: 0.9em; font-weight: 700; }
+#page5 p.txt{font-size: 0.75em;}
+.one{margin-left: 12px !important;}
 
 
 /*modal*/
