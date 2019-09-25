@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>유기묘 지원</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".content_wrap>div").hide();
+			$(".content_wrap>div").eq(0).show();
+			$("#sub_menu .sub_menu li").click(function(){
+				var list = $(this).index();
+				console.log(list);	
+				$("#sub_menu .sub_menu li").removeClass();
+				$(this).addClass("active");
+				$(".content_wrap>div").hide();
+				$(".content_wrap>div").eq(list).show();
+
+			});
+				$("#sub_menu .lan li").click(function(){
+				var lang =$(this).index();
+				console.log(lang);
+				$("#sub_menu .lan li").removeClass();
+				$(this).addClass("on");	
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<header id="sub_header">
+		<div class="header_top clearfix">
+			<h1><a href="index.html">상자 안 고양이</a></h1>
+			<nav class="lan">
+				<ul class="clearfix">
+					<li class="on">KOR</a></li>
+					<li>ENG</li>
+				</ul>
+			</nav>
+			<nav id="sub_menu">
+				<ul class="clearfix">
+					<li><a href="company.html">상자 안 소개</a></li>
+					<li><a href="introduce.html">고양이 소개</a></li>
+					<li><a href="cafemenu.html">카페 메뉴</a></li>
+					<li><a href="everyday.html">고양이 일상</a></li>
+					<li><a href="participate.html">집사 참여</a></li>
+					<li><a href="support.html">유기묘지원</a></li>
+				</ul>
+			</nav>
+			<div class="txt">
+				<h2>유기묘 지원</h2>
+				<p>길거리 고양이에게 행복을 주세요.</p>
+			</div>
+		</div>
+		
+		
+	</header>
+	<div id="support_content">
+		<div class="content_wrap">
+			<div class="ss01">
+				<div class="nav">
+					<ul class="clearfix">
+						<li><img src="images/home_btn.png" alt=""></li>
+						<li><img src="images/forword.png" alt=""></li>
+						<li><a href="sub06.html">유기묘 지원</a></li>
+					
+					</ul>
+				</div>
+				<section class="section01">
+					<img src="images/sb06_img01.jpg" alt="">
+					
+				</section>
+			</div>
+			
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="footer_wrap clearfix">
+			<div class="logo">
+				<h1><a href="index.html">상자 안 고양이</a></h1>
+			</div>
+			<div class="right">
+				<div class="menu">
+					<ul class="clearfix">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">상담문의</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<address>
+					<p>(12345)서울특별시 강남구 강남북로 1234 강남타워 22층 대표이사 : 홍길동</p>
+					<p>사업자등록번호 : 123-45-33456 통신 판매업신고번호 : 제 2020 - 2020202호 개인정보 보호 책임자 : 홍길동 (admin@company.com)</p>
+				</address>
+			          
+				<div class="copylight">COPYRIGHT (C) 상자 안 고양이 COMPANY ALL RIGHTS RESERVED. </div>
+			
+				<select name="sitemap" id="sitemap">
+					<option value="family">FAMILY SITE</option>
+					<option value="next">넥스트H</option>
+					<option value="prev">프리브H</option>
+				</select>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
