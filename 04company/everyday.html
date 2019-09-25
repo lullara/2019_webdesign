@@ -10,17 +10,29 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".content_wrap>div").hide();
-			$(".content_wrap>div").eq(0).show();
-			$("#sub_header .sub_menu li").click(function(){
-				var list = $(this).index();
-				console.log(list);	
-				$("#sub_header .sub_menu li").removeClass("active");
-				$(this).addClass("active").addClass("w50");
-				$(".content_wrap>div").hide();
-				$(".content_wrap>div").eq(list).show();
+		 var frmUrl = location.href;
+         var cutHtml = frmUrl.indexOf("=");
+         var varCheck = frmUrl.substring(cutHtml+1);
+         console.log(varCheck);
 
-			});
+         if( cutHtml > 0 ){
+            view(varCheck);
+         }else{
+            view(0)
+         }
+
+         function view(menu){
+               $("#sub_header .sub_menu li").removeClass("active").eq(menu).addClass("active");
+               $(".content_wrap>div").hide().eq(menu).show();
+         }
+         
+         $("#sub_header .sub_menu li").click(function(){
+            var menu = $(this).index();
+            view(menu);
+         });
+
+
+
 				$("#sub_header .lan li").click(function(){
 				var lang =$(this).index();
 				console.log(lang);
@@ -31,6 +43,7 @@
 
 		});
 	</script>
+	
 </head>
 <body>
 	<header id="sub_header">

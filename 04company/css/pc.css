@@ -270,9 +270,8 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 #sub_menu>ul>li>a:after{content:"";display: block; width: 0;height: 7px; background-color: #f2ce16;transition:.3s;margin: 0 auto; }
 <<<<<<< HEAD
 #sub_menu>ul>li>a:hover:after{width: 100%;}*/
-=======
 /*#sub_menu>ul>li>a:hover:after{width: 100%;}*/
->>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
+
 
 #sub_header .lan{float: right; }
 #sub_header .lan li{float: left; border: 1px solid #f2ce16; width: 50px; height: 50px; font-size:18px; 
