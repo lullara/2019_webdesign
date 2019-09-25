@@ -289,7 +289,11 @@ color:#777;}
 #page5 .prevBtn{position: absolute;left: 25px; top: 40%; }
 #page5 .nextBtn{position: absolute;right: 25px; top: 40%;}
 #page5 span.txt{text-align: center; display: block;padding-top: 30px;}
+<<<<<<< HEAD
 #page5 .section02 .s_02{float: right; width: 575px; height: 410px; background-color:#fff ; padding-top: 10px ;}
+=======
+#page5 .section02 .s_02{float: right; width: 575px; height: 410px; background-color:#fff ; padding-top: 10px ; border-top: 4px solid #ff9110;}
+>>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
 #page5 .section02 .s_02 h3{color:#000;}
 
 #page5 .s_02 #fir{padding-top: 10px; margin-bottom: 20px;}

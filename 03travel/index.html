@@ -101,12 +101,20 @@
                     <div class="menu_bar"></div>
                 </nav>
 
+<<<<<<< HEAD
                 <div class="bar"></div>
             </div>
         </div>
     </header>
     <!-- ---//메뉴--- -->
 
+=======
+				<div class="bar"></div>
+			</div>
+		</div>
+	</header>
+<!-- ---//메뉴--- -->
+>>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
 
     <div id="content_wrap">
         <div class="bgimg">
@@ -257,6 +265,7 @@
                         </li>
                         <li>
 
+<<<<<<< HEAD
                             <a href="#!">
                                 <div class="card_body">일본 <span>￦890,000~</span></div>
                             </a>
@@ -312,6 +321,226 @@
                             <a href="#!">
                                 <p class="text">"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올수 있었어요."</p>
                                 <p class="mini_t">프랑스 파리 자유여행</p>
+=======
+
+
+	<div id="content_wrap">
+		<div class="bgimg">
+			<img src="images/bg_img02.png" alt="">
+		<div class="section_wrap clearfix">
+			<section class="section01">
+				<ul class="clearfix">
+					<li>	
+						<input type="radio" id="first" class="inp" name="tap" checked="checked">
+						<input type="radio" id="second" class="inp" name="tap">
+						<input type="radio" id="third" class="inp" name="tap">
+						<input type="radio" id="foth" class="inp" name="tap">
+				
+						<div class="select01">
+							<ul>
+								<li><label for="first"><img src="images/icon011.png" alt="icon011" >공항예약</label></li>
+								<li><label for="second"><img src="images/icon012.png" alt="icon012" >호텔예약</label></li>
+								<li><label for="third"><img src="images/icon013.png" alt="icon013" >렌트카</label></li>
+								<li><label for="foth"><img src="images/icon014.png" alt="icon014" >휴양지</label></li>
+							</ul>
+						</div>
+						<div class="tap_first clearfix">	
+							<form action="update.php" class="f_layer">
+								<ul>
+									<li>
+										<label for="nation">가고싶은 나라를 선택하세요</label>
+										<select name="nara" id="nation">
+											<option value="미국">미국</option>
+											<option value="베트남">베트남</option>
+											<option value="홍콩">홍콩</option>
+										</select>
+									</li>
+									<li class="f_cell clearfix">
+										<div class="left">
+											<label for="s_date">출발일</label>
+											<input type="date" id="s_date">
+										</div>
+										<div class="right">
+											<label for="e_date">도착일</label>
+											<input type="date" id="e_date">
+										</div>
+									</li>
+									<li class="f_cell clearfix">
+										<div class="left">
+											<label for="c_grade">좌석등급</label>
+											<select id="c_grade">
+												<option value="비즈니스">비즈니스</option>
+												<option value="이코노미">이코노미</option>
+											</select>
+										</div>
+										<div class="right">
+											<label for="num">인원</label>
+											<input type="number" id="num" placeholder="1">
+										</div>
+									</li>
+								</ul>
+								<button type="button">
+									<img src="images/icon002.png" alt="icon002">검색하기</button>
+							</form>
+						</div>
+						<div class="tap_second clearfix">	
+							<form action="update.php" class="f_layer">
+								<ul>
+									<li>
+										<label for="hotel">가고싶은 호텔를 선택하세요</label>
+										<select  id="hotel">
+											<option value="힐튼">힐튼</option>
+											<option value="하얏트">하얏트</option>
+											<option value="스타우드">스타우드</option>
+										</select>
+									</li>
+									<li class="f_cell clearfix">
+										<div class="left">
+											<label for="s_date">체크인</label>
+											<input type="date" id="s_date">
+										</div>
+										<div class="right">
+											<label for="e_date">체크아웃</label>
+											<input type="date" id="e_date">
+										</div>
+									</li>
+									
+								</ul>
+								<button type="button">
+									<img src="images/icon002.png" alt="icon002">검색하기</button>
+							</form>
+						</div>
+						<div class="tap_third clearfix">	
+							<form action="update.php" class="f_layer">
+								<ul>
+									<li>
+										<label for="car">예약하고싶은 차를 선택하세요</label>
+										<select  id="car">
+											<option value="소형차">소형차</option>
+											<option value="중형차">중형차</option>
+											<option value="대형차">대형차</option>
+										</select>
+									</li>
+									<li class="f_cell clearfix">
+										<div class="left">
+											<label for="s_date">렌트일</label>
+											<input type="date" id="s_date">
+										</div>
+										<div class="right">
+											<label for="e_date">반납일</label>
+											<input type="date" id="e_date">
+										</div>
+									</li>
+									
+								</ul>
+								<button type="button">
+									<img src="images/icon002.png" alt="icon002">검색하기</button>
+							</form>
+						</div>
+						<div class="tap_forth clearfix">	
+							<form action="update.php" class="f_layer">
+								<ul>
+									<li>
+										<label for="city">예약하고싶은 휴양지 선택하세요</label>
+										<select  id="city">
+											<option value="뉴욕">뉴욕</option>
+											<option value="다낭">다낭</option>
+											<option value="마카오">마카오</option>
+										</select>
+									</li>
+									<li class="f_cell clearfix">
+										<div class="left">
+											<label for="s_date">출발일</label>
+											<input type="date" id="s_date">
+										</div>
+										<div class="right">
+											<label for="e_date">도착일</label>
+											<input type="date" id="e_date">
+										</div>
+									</li>
+									
+								</ul>
+								<button type="button">
+									<img src="images/icon002.png" alt="icon002">검색하기</button>
+							</form>
+						</div>
+						
+					</li>
+					<li>
+						<div class="card_body">프랑스 <span>￦1,9000,000~</span></div>
+					</li>
+					<li>
+						<div class="card_body">일본 <span>￦890,000~</span></div>
+					</li>
+				</ul>	
+			</section>
+			<section class="section02">
+				<div class="bar"></div>
+				<h2>TRAVEL GO</h2>
+				<p>지금, 여행이 떠나고 싶다면? <br>하이미디어와 여행을 떠나자!</p>
+			</section>
+			<section class="section03 ">
+				<ul class="clearfix">
+					<li>
+						<!-- 1 -->
+						<div class="card_body" >HILTON HOTEL (PARIS)
+							<div class="star clearfix">
+								<div class="icon icon01"></div>
+								<div class="icon icon01"></div>
+								<div class="icon icon01"></div>
+								<div class="icon icon02"></div>
+								<div class="icon icon02"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<!-- 2 -->
+						<div class="card_body">관광명소(디즈니랜드)
+							<div class="star clearfix">
+								<div class="icon icon01"></div>
+								<div class="icon icon01"></div>
+								<div class="icon icon01"></div>
+								<div class="icon icon02"></div>
+								<div class="icon icon02"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<!-- 3 -->
+						<h2>TOKYO</h2>
+						<div class="card_body">20℃ 구름조금<p>습도 60% 바람 남남동 2m/s</p></div>
+					</li>
+					<li>
+						<!-- 4 -->
+					
+							<p class="text">"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올수 있었어요."</p>
+							<p class="mini_t">프랑스 파리 자유여행</p>
+					
+						<div class="star clearfix">
+							<div class="icon icon01"></div>
+							<div class="icon icon01"></div>
+							<div class="icon icon01"></div>
+							<div class="icon icon02"></div>
+							<div class="icon icon02"></div>
+						</div>
+						<div class="card_body">Facebook 여행후기<p>(임정희님)</p></div>
+					</li>
+					<li>
+						<!-- 5 -->
+						<div class="card_body">
+							<img src="images/icon007.png" alt="icon007" class="icon">
+							<h3>&nbsp;&nbsp;여행정보</h3>
+							<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							<a href=""><img src="images/btn_plus.png" alt="icon007" class="plus"></a>
+						</div>
+					</li>
+					<li>
+						<div class="card_body">
+							<img src="images/icon008.png" alt="icon008" class="icon">
+							<h3>&nbsp;&nbsp;맛집정보</h3>
+							<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							<a href=""><img src="images/btn_plus.png" alt="icon007" class="plus"></a>
+>>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
 
                                 <div class="star clearfix">
                                     <div class="icon icon01"></div>

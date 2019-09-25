@@ -336,11 +336,13 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 
 #company_content .section02{padding: 40px 0;} 
 #company_content .section02 ul{margin-bottom: 60px;}
-#company_content .section02 li{float: left; text-align: center; width: 33.33%;}
+#company_content .section02 li{float: left; text-align: center; width: 30%;margin-right: 4%;}
+#company_content .section02 li:last-child{margin-right: 0;}
+#company_content .section02 li:first-child{margin-left: 10px;}
 #company_content .section02 li h3{color:#afba02;margin-bottom: 15px; font-size:20px; font-weight: normal;}
 #company_content .section02 li h3:before{content:"";display: block; width: 50px; height: 3px; 
     background-color: #afba02; margin: 0 auto; margin-bottom: 20px;}
-#company_content .section02 li p{color:#898989;margin-bottom: 5px;}
+#company_content .section02 li p{color:#898989;margin-bottom: 5px; font-size: 0.96em;}
 #company_content .section02 .line{width: 100%; height: 1px;background-color: #fddf00;}
 
 #company_content #section03{padding-top: 60px; margin-bottom: 100px;position: relative;}
@@ -349,12 +351,12 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 #company_content #section03 p{margin-bottom: 9px;}
 #company_content #section03 .p2rd{margin-bottom: 30px;}
 #company_content #section03 .card_wrap{width: 100%;}
-#company_content #section03 .card_wrap li{float: left;width: 50%; height: 315px;background-color: pink;}
+#company_content #section03 .card_wrap li{float: left;width: 50%; height: 315px;background-color: #fff;}
 
 
 
-#company_content #section03 .body{padding: 60px 55px;}
-#company_content #section03 .body01{padding: 60px 55px;}
+#company_content #section03 .body{padding: 80px 140px;}
+#company_content #section03 .body01{padding: 80px 140px;}
 #company_content #section03 .body:after{content:"";border-width: 20px; border-style: solid; 
 border-color: transparent transparent  #ff0 transparent; position: absolute; top: -40px;  left: 50%; z-index: 9999999;
     transform: translateX(-50%);}

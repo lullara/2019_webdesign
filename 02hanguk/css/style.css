@@ -235,6 +235,7 @@ position: absolute; top: 36px; right: -4px;}
 
 .content_wrap03>div{width: 1200px; margin: 0 auto;height: 500px; border: 1px solid #000;text-align: center;padding-top: 200px; font-size: 80px;background-color: #ddd;}
 
+<<<<<<< HEAD
 <!-- --layerpopup -->
 .layerBg{width: 100% !important;height: 500px !important; background:rgba(0,0,0,0.4);position: absolute; top: 0; left: 0;z-index: 99999999;}
 .layer{width: 564px; height: 390px;position: absolute;left: 50%; top: 80%; transform: translate(-50%,-10%);border: 2px solid #000;background-color: #fff;display: none;}
@@ -301,3 +302,7 @@ position: absolute; top: 36px; right: -4px;}
 #sub_footer .footer_menu ul>li>a{display: block; color:#444; font-size: 14px;}
 #sub_footer .footer_wrap address{color:#888888;font-style: normal; font-size: 12px;margin-bottom: 10px;}
 #sub_footer .footer_wrap .copyright{color:#666; font-size: 14px; margin-bottom: 40px;}
+=======
+
+
+>>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
