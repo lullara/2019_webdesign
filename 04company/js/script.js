@@ -64,20 +64,9 @@ $(document).ready(function(){
 	$(".movie").colorbox({iframe:true,innerWidth:900,innerHeight:500});
 
 	
-	function calcHeight(){
-
-	 var the_height=
-	 document.getElementById('the_iframe').contentWindow.
-	 document.body.scrollHeight;
-
-
-	 document.getElementById('the_iframe').height=
-	 the_height;
-
-
-	 document.getElementById('the_iframe').style.overflow = "hidden";
-	}
-
+	$(".movie").colorbox({
+		width:500
+	});
 
 
 

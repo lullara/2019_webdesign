@@ -58,7 +58,6 @@ $(document).ready(function () {
     });
 
 
-<<<<<<< HEAD
     $(".hangukP").click(function(e){
         e.preventDefault();
         $(".layer").show();
@@ -68,9 +67,6 @@ $(document).ready(function () {
         $(".layer").hide();
         $(".layerBg").hide();
     });   
-=======
-
->>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
 
 
 

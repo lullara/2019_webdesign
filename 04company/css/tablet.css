@@ -95,7 +95,7 @@
 
 /*header content*/
 
-
+.content .fc-w{color:#fff;}
 #main_header .content{width: 100%; height: 1800px;}
 
 #main_header .content li{float: left; width: 25%; height: 315px;}

@@ -51,7 +51,6 @@
 /*content*/
 #content_wrap{height: 1100px;width: 100%; background:url(../images/bg_img01.jpg) no-repeat; background-size: cover;padding-top:60px;}
 /*#content_wrap .bgimg{width: 750px; height: 533px; background:url(../images/bg_img02.png) no-repeat; background-color: #fff;}*/
-<<<<<<< HEAD
 .bgimg{position: relative; width: 1400px; margin: 0 auto; }
 .bgimg>img{position: absolute; top: 30px;right: 10px;animation: balloon 0.6s infinite alternate;  }
  	@keyframes balloon{
@@ -61,10 +60,6 @@
  	}
 
 
-=======
-.bgimg{position: relative;width: 1400px; margin: 0 auto;}
-.bgimg img{position: absolute; top: 30px;right: 10px;}
->>>>>>> 541a7a53c8a208dc06cfb0c1ad16d184a47948a1
 #content_wrap .bgimg .section_wrap{width: 980px; margin: 0 auto;}
 #content_wrap .section_wrap .section01{width: 482px; height: 560px; float: left; margin-bottom: 16px; position: relative;}
 #content_wrap .section01>ul>li{width: 233px; height: 240px; float: left; margin-right: 16px; margin-bottom: 16px;}

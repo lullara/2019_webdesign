@@ -2,7 +2,7 @@
 
 
 
-body{min-width: 1260px;}    
+body{min-width: 1260px;font-family: 'Noto Sans KR', sans-serif;}    
 #main_header{height: 1950px; position: relative; margin-bottom: 80px;}
 #header_top{width: 1260px; height: 50px;position: absolute; 
 	left: 50%; margin-left: -630px; top:40px; z-index:1;}
@@ -13,7 +13,7 @@ body{min-width: 1260px;}
 
 #main_menu>ul{}
 #main_menu>ul>li{float: left;}
-#main_menu>ul>li>a{display: block; line-height: 36px; padding: 0 30px; color:white; font-size:18px; text-shadow: 0 0 5px #000;}
+#main_menu>ul>li>a{display: block; line-height: 36px; padding: 0 20px; color:white; font-size:18px; text-shadow: 0 0 5px #000;}
 #main_menu>ul>li>a:after{content:"";display: block; width: 0;height: 6px; background-color: #f2ce16;transition:.3s;margin: 0 auto; }
 #main_menu>ul>li>a:hover:after{width: 100%;}
 
@@ -94,11 +94,12 @@ body{min-width: 1260px;}
 #main_header .content .content2ed{position: relative; overflow: hidden; cursor: pointer;}
 #main_header .content .content2ed:hover .img001{transform:scale(1.2); display: block;transition:0.3s;}
 #main_header .content .content2ed .iconPlay{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-#main_header .content .content2ed p{width: 200px;color:white;position: absolute; bottom: 60px; left: 50%; transform:translateX(-50%);font-weight:bold;font-size: 1.1em;}
+#main_header .content .content2ed p{width: 200px;color:white;position: absolute; bottom: 60px; left: 50%; transform:translateX(-50%);
+    font-weight:bold;}
 
 
 #main_header .content .content3rd{padding: 30px; position: relative; width: 50%;}
-.content .fc-w{color:#fff; font-size: 1.1em;}
+.content .fc-w{color:#fff; }
 
 .content .content3rd h2{ width: 200px; position: relative; z-index: 1;}
 .content .content3rd .slider2{width: 630px; position: absolute; top: 0;left: 0;}
@@ -259,7 +260,7 @@ margin: 18px 50%; transform:translate(-50%,-50%);}
 
 #sub_menu>ul{}
 #sub_menu>ul>li{float: left;}
-#sub_menu>ul>li>a{display: block; line-height: 36px; padding: 0 30px; color:white; font-size:18px; text-shadow: 0 0 5px #000;}
+#sub_menu>ul>li>a{display: block; line-height: 36px; padding: 0 20px; color:white; font-size:18px; text-shadow: 0 0 5px #000;}
 #sub_menu>ul>li>a:after{content:"";display: block; width: 0;height: 6px; background-color: #f2ce16;transition:.3s;margin: 0 auto; }
 #sub_menu>ul>li>a:hover:after{width: 100%;}
 

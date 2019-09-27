@@ -9,15 +9,16 @@
 #header_top > h1 a{display: block; line-height: 116px;}
 
 #header_top > #main_menu{position: fixed; width: 100%; height: 100%; 
-    background:rgba(255,255,255,1)!important; z-index:99999;left: -100%;padding: 60px 0;}
+    background:rgba(255,255,255,1)!important; z-index:99999;left: -100%;padding: 40px 0;border-top: 15px solid #f2ce16;}
 
-#main_menu>ul{position: absolute; left: 50%; top: 50%;transform:translate(-50%,-50%);}
+#main_menu>ul{position: absolute; left: 50%; top: 40%;transform:translate(-50%,-40%);}
 #main_menu>ul>li{text-align: center;}
-#main_menu>ul>li>a{display: block; text-align: center;line-height: 100px; padding: 30px 0; 
-    color:#000; font-size:2em;font-weight:bold;}
+#main_menu>ul>li>a{display: block; text-align: center;line-height: 40px; padding: 30px 0; 
+    color:#000; font-size:1.5em;font-weight:bold;}
+#main_menu>ul>li>a:after{content: ''; display: block; width: 180px; height: 1px; background-color: #ddd;margin: 10px 0;}
 
 
-#main_header .lan{position: absolute; top: 70px;right: 0; z-index: 1;}
+#main_header .lan{position: absolute; top: 70px;right: 0; z-index: 1;display: none;}
 #main_header .lan li{float: left; border: 1px solid #f2ce16; width: 50px; height: 50px; font-size:18px; 
     color:white; line-height: 50px;text-align: center; cursor: pointer;}
 #main_header .lan li.on{background-color: #f2ce16;}
@@ -51,7 +52,7 @@
 
 /*bxslider*/
 
-.slider_wrap{height: 380px; position: relative; overflow: hidden;   }
+.slider_wrap{height: 380px; position: relative; overflow: hidden;}
 .slider_wrap .prev, .slider_wrap .next
 {display: none;position: absolute;  top: 200px; z-index:9999}
 .slider_wrap .prev{left:90px;}
@@ -60,7 +61,7 @@
 .slider_wrap li.first{background:url(../images/mainimg01.jpg) no-repeat center; background-size:cover;}
 .slider_wrap li.second{background:url(../images/mainimg02.jpg) no-repeat center; background-size:cover;}
 .slider_wrap li.third{background:url(../images/mainimg03.jpg) no-repeat center; background-size:cover;}
-.slider_wrap .slider_txt{width: 700px; position: absolute; left: 50%; margin-left: -350px; _background-color: #fff;top: 30%;
+.slider_wrap .slider_txt{_width: 300px; position: absolute; left: 50%; margin-left: -350px; _background-color: #fff;top: 30%;
         color:white; text-align: center;/* background-color:rgba(0,0,0,0.4); padding: 20px 20px 30px 20px; box-shadow: 0 0 20px #fff;*/}
 .slider_wrap h3{font-size:3em; text-shadow: 1px 1px 10px #000;}
 .slider_wrap h3:after{content:"";display: block; width: 300px; height: 3px; background-color: #fff; margin: 20px auto; }
@@ -92,7 +93,7 @@
 
 /*header content*/
 
-
+.content .fc-w{color:#fff; font-size: 1.1em;}
 #main_header .content{width: 100%; height: 1800px;}
 
 #main_header .content li{float: left; width: 25%; height: 315px;}
@@ -160,10 +161,8 @@ position: absolute; left: 50%; top: 130px; z-index: 1;}
 {width: 50%;background-color: #413d3e;padding-top: 45px;
     text-align: center; color: white;font-weight: bold;}
 
-#main_header .content .content7st
-{position: relative;width: 100%; overflow: hidden;}
-#main_header .content .content7st img{width: 100%; 
-    position: absolute;left: 0; top: 40%; transform: translateY(-50%);}
+#main_header .content .content7st{position: relative;width: 100%; display: block;}
+#main_header .content .content7st img{width: 100%; position: absolute;left: 0; top: 50%; transform: translateY(-50%);}
 .content .content7st .card{position: absolute;top: 40px; left: 40px; color:#5e5e5e; }
 .content .content7st .card h3{font-size:18px; font-weight: normal}
 .content .content7st .card h3:after{content:"";display: block; width: 30px; height: 3px; 
@@ -272,7 +271,7 @@ height: 3px; background-color: #fff; margin: 20px 0;}
 
 
 
------------------------------------------------sub-----------------------------------
+/*-----------------------------------------------sub-----------------------------------*/
 
 
 
@@ -294,7 +293,7 @@ height: 3px; background-color: #fff; margin: 20px 0;}
     color:#000; font-size:2em;font-weight:bold;padding: 30px 0 }
 
 
-#sub_header .lan{float: right; }
+#sub_header .lan{float: right; display: none;}
 #sub_header .lan li{float: left; border: 1px solid #f2ce16; width: 50px; height: 50px; font-size:18px; 
     color:white; line-height: 50px;text-align: center; cursor: pointer;}
 #sub_header .lan li.on{background-color: #f2ce16;}
@@ -336,10 +335,12 @@ height: 3px; background-color: #fff; margin: 20px 0;}
 
 #company_content .section02{padding: 40px 0;} 
 #company_content .section02 ul{margin-bottom: 60px;}
-#company_content .section02 li{float: left; text-align: center; width: 30%;margin-right: 4%;}
-#company_content .section02 li img{width: 70%}
+#company_content .section02 li{text-align: center; width: 30%;margin-right: 4%;}
+#company_content .section02 li img{width: 40%}
 #company_content .section02 li:last-child{margin-right: 0;}
 #company_content .section02 li:first-child{margin-left: 10px;}
+
+
 #company_content .section02 li h3{color:#afba02;margin-bottom: 15px; font-size:18px; font-weight: normal;}
 #company_content .section02 li h3:before{content:"";display: block; width: 50px; height: 3px; 
     background-color: #afba02; margin: 0 auto; margin-bottom: 20px;}
@@ -372,7 +373,7 @@ border-color: #ff0 transparent transparent transparent; position: absolute; bott
 #section03 .card_wrap p{color:#8d8d8d; margin-bottom: 5px;}
 
 /*sub img files*/
-.ss01 .section02{width: 960px;}
+.ss01 .section02{width: 100%;}
 .ss03 .section02{width: 100%; margin: 40px auto;}
 .ss04 .section02{width: 100%; margin: 40px auto;}
 
@@ -421,7 +422,8 @@ border-color: #ff0 transparent transparent transparent; position: absolute; bott
 
 
 /*participate content*/
-#participate_content{}
+#participate_content{width: 100%;}
+#participate_content .section01 iframe{margin: 0 auto; display: block; margin: 30px auto; }
 #participate_content .content_wrap{width: 100%; margin: 0 auto;}
 #participate_content .nav{padding-top: 20px;}
 #participate_content .nav li{float: left; padding-right: 10px;}
@@ -455,3 +457,7 @@ border-color: #ff0 transparent transparent transparent; position: absolute; bott
 #footer .del{display: none;}
 #footer select{display: block; margin: 0 auto;border: 1px solid #000; width: 180px; height: 45px; 
     text-indent: 5px;}
+
+
+    /*colorbox*/
+    .cboxIframe{width: 400px;}
