@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	var myslider = $(".slider").bxSlider({
 		auto:true,
-		controls:false
+		controls:false,
+		mode:"fade" //'horiazntal','vertical'
 	});
 
 	$(".prev").click(function(){
